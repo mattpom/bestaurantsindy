@@ -1,4 +1,3 @@
-import {SiteFooter,SiteHeader} from "../../components/SiteChrome";
-import ReviewsExplorer from "./ReviewsExplorer";
-export const metadata={title:"Restaurant Reviews | BestaurantsIndy",description:"Browse direct, useful Indianapolis restaurant field notes and reviews."};
-export default function Reviews(){return <main><SiteHeader/><section className="pageHero"><p className="eyebrow">REVIEWS & FIELD NOTES</p><h1>What Sean ordered—and whether you should.</h1><p>Browse the launch field notes below. Restaurant names, current prices and practical details are added only after they are verified.</p></section><section className="contentPage"><ReviewsExplorer/></section><SiteFooter/></main>}
+import {FieldNote} from "../../../components/FieldNote";
+export const metadata={title:"Breakfast Bagel Field Note | BestaurantsIndy",description:"Sean's Indianapolis breakfast bagel field note."};
+export default function Page(){return <FieldNote title="The breakfast sandwich that does not need improving" category="BREAKFAST · FIELD NOTE" verdict="SEAN'S VERDICT: ORDER THIS" image="/bagel-clean.png"><p className="leadArticle">A glossy bagel, egg, cheese and meat wrapped in foil. It is not trying to be architectural. It is trying to be breakfast.</p><h2>What stands out</h2><p>The proportions favor a real meal rather than a thin coffee-shop afterthought. The foil is part of the experience: this is built to be eaten while it is still hot.</p><h2>Who it is for</h2><p>Anyone who wants breakfast to solve hunger instead of merely acknowledging it.</p></FieldNote>}
