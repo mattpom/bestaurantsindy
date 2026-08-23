@@ -1,0 +1,4 @@
+import {SiteFooter,SiteHeader} from "../../components/SiteChrome";
+const areas=["Downtown","Mass Ave","Fountain Square","Broad Ripple","Northside","Beyond Indy"];
+export const metadata={title:"Indianapolis Neighborhood Dining | BestaurantsIndy"};
+export default function Neighborhoods(){return <main><SiteHeader/><section className="pageHero"><p className="eyebrow">BROWSE BY NEIGHBORHOOD</p><h1>Start close. Drive farther if it earns it.</h1><p>This index will connect every verified review to its neighborhood. Empty areas remain plainly labeled instead of being filled with weak recommendations.</p></section><section className="contentPage"><div className="neighborhoodIndex">{areas.map(x=><article key={x}><h2>{x}</h2><p>Verified recommendations are being added.</p><span>0 published reviews</span></article>)}</div></section><SiteFooter/></main>}
