@@ -10,6 +10,15 @@ export type ReviewEntry = {
 
 export const reviewEntries: ReviewEntry[] = [
   {
+    title: "Hooray for Ray",
+    category: "Ramen Ray",
+    verdict: "Order the Spicy Miso",
+    image: "/ramen-clean.png",
+    href: "/reviews/ramen-field-note",
+    summary: "Spicy miso pork broth with chili heat, noodles, chashu, a marinated egg, and vegetables.",
+    publishedAt: "2026-08-25T09:30:00-04:00",
+  },
+  {
     title: "No, You Can Be My Wingman",
     category: "Wings",
     verdict: "New #1",
@@ -26,15 +35,6 @@ export const reviewEntries: ReviewEntry[] = [
     href: "/reviews/bagel-field-note",
     summary: "At Broad Ripple Bagel & Deli, turkey, ham, bacon, Colby, and Swiss turn a steamed plain bagel into the Tonya Harding.",
     publishedAt: "2026-08-25T09:00:00-04:00",
-  },
-  {
-    title: "Ramen field note",
-    category: "Japanese",
-    verdict: "Go out of your way",
-    image: "/ramen-clean.png",
-    href: "/reviews/ramen-field-note",
-    summary: "Rich broth, corn, greens, pork and a properly jammy egg.",
-    publishedAt: "2026-08-23T00:00:00-04:00",
   },
   {
     title: "Pork chop field note",
