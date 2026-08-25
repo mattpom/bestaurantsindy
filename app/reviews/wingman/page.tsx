@@ -25,6 +25,7 @@ export default function Wingman(){
         <p>Soy garlic, specifically. This is the wing that's currently winning my heart and my stomach, and it's not close. The crunch survives the entire order, the glaze is savory-sweet instead of cloying, and it made me actively reconsider a ranking I thought was settled. If you've never had Korean fried chicken and only have room to try one place, start here.</p>
         <h2>#2 — Traditional Buffalo-style wings</h2>
         <p>Not dethroned. Demoted. A classic Buffalo wing — hot sauce, butter, blue cheese, the whole ritual — is still a real occasion and I'm not walking away from it. Game on, hands dirty, no fork. BuffaLouie's in Carmel, Wings Etc. in Noblesville, and Fat Dan's in Broad Ripple all belong in this conversation — and, of course, so do the Hermanaki wings at Ale Emporium. But traditional Buffalo-style wings are no longer the automatic answer to “best wing,” and pretending otherwise after eating bb.q's soy garlic version would just be nostalgia talking.</p>
+        {/* Ranked entries use the same plain heading-and-paragraph format. */}
         <h2>#3 — CM Korean Fried Chicken, Broad Ripple</h2>
         <p>Good, and part of the reason this whole ranking got rewritten in the first place. The double-fry crunch is there and it's legitimate Korean fried chicken. It just loses the head-to-head with bb.q's soy garlic execution — close enough that on a different night it could flip, but tonight bb.q wins.</p>
         <h2>The verdict</h2>
