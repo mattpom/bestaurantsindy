@@ -12,6 +12,8 @@ export default function Page() {
       category="BROAD RIPPLE · FIELD NOTE"
       verdict="SEAN'S VERDICT: ORDER THE TONYA HARDING"
       image="/bagel-clean.png"
+      noteTitle="The steam is the secret"
+      note="Broad Ripple Bagel & Deli steams its sandwiches instead of simply toasting the bagel. That heat melts the Colby and Swiss into the turkey, ham, and bacon while keeping the bagel soft enough to hold the whole stack together."
     >
       <p className="leadArticle">
         Walk into Broad Ripple Bagel & Deli thinking about lox and cream cheese, and the Tonya Harding can knock that plan sideways. Turkey, ham, bacon, Colby, and Swiss arrive stacked on a plain bagel, then the whole thing is steamed until the cheese melts into the meat and the bagel turns warm and yielding.
