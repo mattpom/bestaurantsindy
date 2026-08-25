@@ -16,7 +16,7 @@ export const reviewEntries: ReviewEntry[] = [
     image: "/colonel-crying.webp",
     href: "/reviews/wingman",
     summary: "Korean fried chicken, Buffalo wings, and why soy garlic now holds the top spot.",
-    publishedAt: "2026-08-25T00:00:00-04:00",
+    publishedAt: "2026-08-25T01:20:00-04:00",
   },
   {
     title: "Ramen field note",
