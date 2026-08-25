@@ -3,6 +3,19 @@ import {SiteFooter,SiteHeader} from "../../../components/SiteChrome";
 export const metadata={
   title:"No, You Can Be My Wingman | BestaurantsIndy",
   description:"Korean fried chicken, Buffalo wings, and why bb.q Chicken in Castleton now holds Sean's top spot.",
+  openGraph:{
+    title:"No, You Can Be My Wingman",
+    description:"Korean fried chicken, Buffalo wings, and why soy garlic now holds the top spot.",
+    type:"article",
+    url:"/reviews/wingman",
+    images:["/colonel-crying.webp"],
+  },
+  twitter:{
+    card:"summary_large_image",
+    title:"No, You Can Be My Wingman",
+    description:"Korean fried chicken, Buffalo wings, and why soy garlic now holds the top spot.",
+    images:["/colonel-crying.webp"],
+  },
 };
 
 export default function Wingman(){
