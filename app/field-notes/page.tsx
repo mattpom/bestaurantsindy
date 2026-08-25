@@ -1,6 +1,6 @@
 import { SiteHeader, SiteFooter } from "../../components/SiteChrome";
 export const metadata={title:"Field Notes | BestaurantsIndy",description:"Consider it the small plates of Indianapolis-area food: quick finds, local oddities, old favorites, and other bites worth remembering."};
 const notes=[
-{title:"The Nostalgic Crunch Coat Cone",place:"JIMMIES DAIRY BAR · PENDLETON",image:"/crunch-coat-cone.png",href:"/field-notes/crunch-coat-cone",summary:"Vanilla soft serve buried under sweet golden crunch and rainbow sprinkles—the kind of cone that tastes like an Indiana summer."}
+{title:"The Nostalgic Crunch Coat Cone",place:"JIMMIES DAIRY BAR · PENDLETON",image:"/jimmies-crunch-coat.png",href:"/field-notes/crunch-coat-cone",summary:"Vanilla soft serve buried under sweet golden crunch and rainbow sprinkles—the kind of cone that tastes like an Indiana summer."}
 ];
 export default function Page(){return <main><SiteHeader/><section className="pageHero"><p className="eyebrow">FIELD NOTES</p><h1>Consider it the small plates of Indianapolis-area food.</h1><p>Quick finds, local oddities, old favorites, and memorable bites that deserve attention without becoming full restaurant reviews.</p></section><section className="contentPage fieldNoteGrid">{notes.map(note=><a className="fieldNoteCard" href={note.href} key={note.title}><img src={note.image} alt={note.title}/><div><span>{note.place}</span><h2>{note.title}</h2><p>{note.summary}</p><b>Read the Field Note →</b></div></a>)}</section><SiteFooter/></main>}
