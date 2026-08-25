@@ -16,7 +16,7 @@ export default function Home() {
   return <main>
     <header>
       <a className="logo" href="#top">Bestaurants<span>Indy</span></a>
-      <nav><a href="/reviews">Reviews</a><a href="/field-notes">Field Notes</a><a href="/guides">Guides</a><a href="/neighborhoods">Neighborhoods</a><a href="/about">About Sean</a></nav>
+      <nav><a href="/reviews">Reviews</a><a href="/field-notes">Field Notes</a><a href="/out-of-sight-not-out-of-mind">Out of Sight, Not Out of Mind</a><a href="/guides">Guides</a><a href="/neighborhoods">Neighborhoods</a><a href="/about">About Sean</a></nav>
       <a className="ig" href="https://www.instagram.com/bestaurantsindy/" target="_blank" rel="noreferrer">@bestaurantsindy</a>
     </header>
 
@@ -49,6 +49,11 @@ export default function Home() {
     <section className="fieldNotesHome section">
       <div className="fieldNotesIntro"><p className="eyebrow">FIELD NOTES</p><h2>The small plates of Indianapolis-area food.</h2><p>Quick finds, local oddities, old favorites, and memorable bites—kept separate from full restaurant reviews.</p><a className="button red" href="/field-notes">Browse Field Notes</a></div>
       <a className="fieldNotesFeature" href="/field-notes/crunch-coat-cone"><img src="/jimmies-crunch-coat.jpg" alt="Crunch Coat cone at Jimmies Dairy Bar in Pendleton" /><div><span>PENDLETON · ICE CREAM</span><h3>The Nostalgic Crunch Coat Cone</h3><p>Vanilla soft serve buried under sweet golden crunch and rainbow sprinkles at Jimmies Dairy Bar.</p><b>Read the Field Note →</b></div></a>
+    </section>
+
+    <section className="awayHome section">
+      <div className="awayIntro"><p className="eyebrow">OUT OF SIGHT, NOT OUT OF MIND</p><h2>Good food does not stop at the state line.</h2><p>Memorable meals from other cities—the places and plates still worth thinking about after the trip home.</p><a className="button red" href="/out-of-sight-not-out-of-mind">Explore Beyond Indy</a></div>
+      <a className="awayFeature" href="/out-of-sight-not-out-of-mind/princes-hot-chicken"><img src="/princes-hot-chicken.jpeg" alt="Prince’s hot chicken on white bread with pickles in Nashville" /><div><span>NASHVILLE · HOT CHICKEN</span><h3>The Best Nashville Hot Chicken Is from Nashville</h3><p>Prince’s did not chase the hot-chicken trend. It started it.</p><b>Read the story →</b></div></a>
     </section>
 
     <section className="guides section" id="guides">

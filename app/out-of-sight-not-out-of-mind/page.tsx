@@ -1,0 +1,6 @@
+import { SiteHeader, SiteFooter } from "../../components/SiteChrome";
+export const metadata={title:"Out of Sight, Not Out of Mind | BestaurantsIndy",description:"Memorable food beyond Indianapolis: dishes and destinations worth thinking about long after the trip home."};
+const stories=[
+{title:"The Best Nashville Hot Chicken Is from Nashville",place:"PRINCE’S HOT CHICKEN · NASHVILLE",image:"/princes-hot-chicken.jpeg",href:"/out-of-sight-not-out-of-mind/princes-hot-chicken",summary:"Prince’s did not chase the hot-chicken trend. It started it—and the original still explains why the dish became a Nashville landmark."}
+];
+export default function Page(){return <main className="awayPage"><SiteHeader/><section className="pageHero"><p className="eyebrow">OUT OF SIGHT, NOT OUT OF MIND</p><h1>Some meals follow you home.</h1><p>Food from beyond Indianapolis that remains worth remembering—and worth traveling back for.</p></section><section className="contentPage awayGrid">{stories.map(story=><a className="awayCard" href={story.href} key={story.title}><img src={story.image} alt={story.title}/><div><span>{story.place}</span><h2>{story.title}</h2><p>{story.summary}</p><b>Read the story →</b></div></a>)}</section><SiteFooter/></main>}
