@@ -16,6 +16,7 @@ export function FieldNote({
   children: React.ReactNode;
   noteTitle?: string;
   note?: string;
+  imageClassName?: string;
 }) {
-  return <main><SiteHeader/><article className="articlePage"><div className="articleHead"><p className="eyebrow">{category}</p><h1>{title}</h1><p className="articleVerdict">{verdict}</p></div><img className="articleImage" src={image} alt=""/><div className="articleBody">{children}<aside><strong>{noteTitle}</strong><p>{note}</p></aside><a className="button red" href="/reviews">Back to all reviews</a></div></article><SiteFooter/></main>
+  return <main><SiteHeader/><article className="articlePage"><div className="articleHead"><p className="eyebrow">{category}</p><h1>{title}</h1><p className="articleVerdict">{verdict}</p></div><img className={`articleImage ${imageClassName ?? ""}`} src={image} alt=""/><div className="articleBody">{children}<aside><strong>{noteTitle}</strong><p>{note}</p></aside><a className="button red" href="/reviews">Back to all reviews</a></div></article><SiteFooter/></main>
 }
