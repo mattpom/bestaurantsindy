@@ -36,13 +36,4 @@ export const reviewEntries: ReviewEntry[] = [
     summary: "At Broad Ripple Bagel & Deli, turkey, ham, bacon, Colby, and Swiss turn a steamed plain bagel into the Tonya Harding.",
     publishedAt: "2026-08-25T09:00:00-04:00",
   },
-  {
-    title: "Pork chop field note",
-    category: "Dinner",
-    verdict: "Worth the price",
-    image: "/chop-clean.png",
-    href: "/reviews/pork-chop-field-note",
-    summary: "A thick seared chop with greens and a sharp sauce drizzle.",
-    publishedAt: "2026-08-23T00:00:00-04:00",
-  },
 ];
