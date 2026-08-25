@@ -15,10 +15,13 @@ export async function GET() {
   const items = reviewEntries.map((entry) => {
     const link = `${SITE_URL}${entry.href}`;
     const image = `${SITE_URL}${entry.image}`;
+    const guid = entry.href === "/reviews/wingman"
+      ? `${link}#instagram-2026-08-25`
+      : link;
     return `<item>
       <title>${escapeXml(entry.title)}</title>
       <link>${link}</link>
-      <guid isPermaLink="true">${link}</guid>
+      <guid isPermaLink="false">${guid}</guid>
       <description>${escapeXml(entry.summary)}</description>
       <category>${escapeXml(entry.category)}</category>
       <pubDate>${new Date(entry.publishedAt).toUTCString()}</pubDate>
