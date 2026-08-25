@@ -2,7 +2,7 @@ import {FieldNote} from "../../../components/FieldNote";
 
 export const metadata = {
   title: "The Day Lox Took a Back Seat | BestaurantsIndy",
-  description: "Broad Ripple Bagel & Deli's Tonya Harding makes the case for a hot, stacked deli sandwich on a steamed bagel.",
+  description: "Broad Ripple Bagel & Deli's Tonya Harding makes the case for a hot, stacked lunch sandwich on a steamed bagel.",
 };
 
 export default function Page() {
@@ -17,9 +17,9 @@ export default function Page() {
         Walk into Broad Ripple Bagel & Deli thinking about lox and cream cheese, and the Tonya Harding can knock that plan sideways. Turkey, ham, bacon, Colby, and Swiss arrive stacked on a plain bagel, then the whole thing is steamed until the cheese melts into the meat and the bagel turns warm and yielding.
       </p>
 
-      <h2>A bagel shop with its own point of view</h2>
+      <h2>A bagel shop built around sandwiches</h2>
       <p>
-        Broad Ripple Bagel & Deli has been serving steamed bagel sandwiches since 2003. The method matters. This is not a toasted bagel with cold deli meat balanced on top. Steam pulls the sandwich together: the cheese softens, the meats warm through, and the bagel compresses just enough to keep a substantial stack manageable.
+        Broad Ripple Bagel & Deli has been serving steamed bagel sandwiches since 2003. Its menu runs well beyond breakfast, with hot deli combinations built for lunch and serious appetites. The method matters. This is not a toasted bagel with cold deli meat balanced on top. Steam pulls the sandwich together: the cheese softens, the meats warm through, and the bagel compresses just enough to keep a substantial stack manageable.
       </p>
 
       <h2>Why the Tonya Harding works</h2>
@@ -32,7 +32,7 @@ export default function Page() {
 
       <h2>The verdict</h2>
       <p>
-        Lox remains a classic. On this visit, it took a back seat. Order the Tonya Harding when you want Broad Ripple Bagel & Deli at its most excessive and most specific: a hot, tightly packed sandwich that eats like lunch even if the clock still says breakfast.
+        Lox remains a classic. On this visit, it took a back seat. Order the Tonya Harding when you want Broad Ripple Bagel & Deli at its most excessive and most specific: a hot, tightly packed lunch sandwich that solves hunger without pretending to be delicate.
       </p>
       <p>
         <strong>Broad Ripple Bagel & Deli</strong><br />
