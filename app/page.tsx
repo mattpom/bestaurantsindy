@@ -47,7 +47,7 @@ export default function Home() {
 
     <section className="fieldNotesHome section">
       <div className="fieldNotesIntro"><p className="eyebrow">FIELD NOTES</p><h2>The small plates of Indianapolis-area food.</h2><p>Quick finds, local oddities, old favorites, and memorable bites—kept separate from full restaurant reviews.</p><a className="button red" href="/field-notes">Browse Field Notes</a></div>
-      <a className="fieldNotesFeature" href="/field-notes/crunch-coat-cone"><img src="/jimmies-crunch-coat.png" alt="Crunch Coat cone at Jimmies Dairy Bar in Pendleton" /><div><span>PENDLETON · ICE CREAM</span><h3>The Nostalgic Crunch Coat Cone</h3><p>Vanilla soft serve buried under sweet golden crunch and rainbow sprinkles at Jimmies Dairy Bar.</p><b>Read the Field Note →</b></div></a>
+      <a className="fieldNotesFeature" href="/field-notes/crunch-coat-cone"><img src="/jimmies-crunch-coat.jpg" alt="Crunch Coat cone at Jimmies Dairy Bar in Pendleton" /><div><span>PENDLETON · ICE CREAM</span><h3>The Nostalgic Crunch Coat Cone</h3><p>Vanilla soft serve buried under sweet golden crunch and rainbow sprinkles at Jimmies Dairy Bar.</p><b>Read the Field Note →</b></div></a>
     </section>
 
     <section className="guides section" id="guides">
