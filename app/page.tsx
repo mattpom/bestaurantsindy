@@ -15,7 +15,7 @@ export default function Home() {
   return <main>
     <header>
       <a className="logo" href="#top">Bestaurants<span>Indy</span></a>
-      <nav><a href="/reviews">Reviews</a><a href="/guides">Guides</a><a href="/neighborhoods">Neighborhoods</a><a href="/about">About Sean</a></nav>
+      <nav><a href="/reviews">Reviews</a><a href="/field-notes">Field Notes</a><a href="/guides">Guides</a><a href="/neighborhoods">Neighborhoods</a><a href="/about">About Sean</a></nav>
       <a className="ig" href="https://www.instagram.com/bestaurantsindy/" target="_blank" rel="noreferrer">@bestaurantsindy</a>
     </header>
 
@@ -45,6 +45,11 @@ export default function Home() {
       <p className="note">Launch stories are being prepared from Sean&apos;s original visits. Restaurant names, prices, and current details will appear only after verification.</p>
     </section>
 
+    <section className="fieldNotesHome section">
+      <div className="fieldNotesIntro"><p className="eyebrow">FIELD NOTES</p><h2>All things Indy-area food.</h2><p>Quick finds, local oddities, old favorites, and anything worth remembering—even when it does not need a full restaurant review.</p><a className="button red" href="/field-notes">Browse Field Notes</a></div>
+      <a className="fieldNotesFeature" href="/field-notes/crunch-coat-cone"><img src="/crunch-coat-cone.png" alt="Crunch Coat cone at Jimmies Dairy Bar in Pendleton" /><div><span>PENDLETON · ICE CREAM</span><h3>The Nostalgic Crunch Coat Cone</h3><p>Vanilla soft serve buried under sweet golden crunch and rainbow sprinkles at Jimmies Dairy Bar.</p><b>Read the Field Note →</b></div></a>
+    </section>
+
     <section className="guides section" id="guides">
       <div><p className="eyebrow gold">DECIDE FASTER</p><h2>Tell me the occasion.<br/>I&apos;ll tell you where to eat.</h2><p className="intro">Useful lists built around an actual decision—not forty restaurants thrown onto a page for search traffic.</p></div>
         <div className="guideList">{guides.map(([title,copy],i)=><a href="/guides" key={title}><span>0{i+1}</span><div><strong>{title}</strong><p>{copy}</p></div><b>↗</b></a>)}</div>
@@ -69,6 +74,6 @@ export default function Home() {
 
     <section className="dispatch section" id="dispatch"><p className="eyebrow">THE FIRST DISPATCHES</p><h2>BestaurantsIndy is just getting seated.</h2><p>The first full restaurant stories are coming next. Until then, follow the original recommendations and food photos on Instagram.</p><a className="button red" href="https://www.instagram.com/bestaurantsindy/" target="_blank" rel="noreferrer">Visit @bestaurantsindy</a></section>
 
-    <footer><Link className="logo" href="/">Bestaurants<span>Indy</span></Link><p>Indianapolis restaurants worth leaving the house for.</p><div><a href="/reviews">Reviews</a><a href="/guides">Guides</a><a href="/about">About</a><a href="/editorial-policy">Editorial policy</a></div><small>© 2026 BestaurantsIndy. Opinions are Sean&apos;s. Sponsored or hosted meals will be labeled plainly.</small></footer>
+    <footer><Link className="logo" href="/">Bestaurants<span>Indy</span></Link><p>Indianapolis restaurants worth leaving the house for.</p><div><a href="/reviews">Reviews</a><a href="/field-notes">Field Notes</a><a href="/guides">Guides</a><a href="/about">About</a><a href="/editorial-policy">Editorial policy</a></div><small>© 2026 BestaurantsIndy. Opinions are Sean&apos;s. Sponsored or hosted meals will be labeled plainly.</small></footer>
   </main>
 }
