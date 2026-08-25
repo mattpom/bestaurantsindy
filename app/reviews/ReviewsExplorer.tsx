@@ -1,7 +1,7 @@
 "use client";
 import {useMemo,useState} from "react";
 const entries=[
-  {title:"No, You Can Be My Wingman",category:"Wings",verdict:"New #1",image:"",href:"/reviews/wingman",summary:"Korean fried chicken, Buffalo wings, and why soy garlic now holds the top spot."},
+  {title:"No, You Can Be My Wingman",category:"Wings",verdict:"New #1",image:"/colonel-crying.webp",href:"/reviews/wingman",summary:"Korean fried chicken, Buffalo wings, and why soy garlic now holds the top spot."},
   {title:"Ramen field note",category:"Japanese",verdict:"Go out of your way",image:"/ramen-clean.png",href:"/reviews/ramen-field-note",summary:"Rich broth, corn, greens, pork and a properly jammy egg."},
   {title:"Breakfast bagel field note",category:"Breakfast",verdict:"Order this",image:"/bagel-clean.png",href:"/reviews/bagel-field-note",summary:"A substantial foil-wrapped breakfast sandwich built for appetite."},
   {title:"Pork chop field note",category:"Dinner",verdict:"Worth the price",image:"/chop-clean.png",href:"/reviews/pork-chop-field-note",summary:"A thick seared chop with greens and a sharp sauce drizzle."},
