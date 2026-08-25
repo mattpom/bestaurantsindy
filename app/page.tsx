@@ -2,7 +2,7 @@ import Link from "next/link";
 
 const cards = [
   ["Worth the drive","A bowl of ramen that makes its own argument","Rich broth, a jammy egg, and enough restraint to let every ingredient do its job.","GO OUT OF YOUR WAY","ramen"],
-  ["What to order","The breakfast sandwich that does not need improving","Simple, substantial, and exactly what a breakfast sandwich is supposed to be.","ORDER THIS","bagel"],
+  ["Broad Ripple","The Day Lox Took a Back Seat","The Tonya Harding stacks turkey, ham, bacon, Colby, and Swiss on a hot steamed bagel.","ORDER THIS","bagel"],
   ["Dinner decision","When the pork chop is the obvious answer","A serious plate for the night when nobody wants a cautious dinner.","WORTH THE PRICE","chop"],
 ];
 const guides = [
