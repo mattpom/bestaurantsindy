@@ -9,6 +9,7 @@ type FeedEntry = {
   href: string;
   summary: string;
   publishedAt: string;
+  guid?: string;
 };
 
 const sectionEntries: FeedEntry[] = [
@@ -18,7 +19,8 @@ const sectionEntries: FeedEntry[] = [
     image: "/princes-hot-chicken.jpeg",
     href: "/out-of-sight-not-out-of-mind/princes-hot-chicken",
     summary: "Prince’s Hot Chicken Shack did not chase the Nashville hot-chicken trend. It started it—and the original still explains why the dish became a landmark.",
-    publishedAt: "2026-08-25T14:32:00-04:00",
+    publishedAt: "2026-08-25T16:31:00-04:00",
+    guid: "/out-of-sight-not-out-of-mind/princes-hot-chicken#instagram-backfill-2026-08-25",
   },
   {
     title: "The Nostalgic Crunch Coat Cone",
@@ -26,7 +28,8 @@ const sectionEntries: FeedEntry[] = [
     image: "/jimmies-crunch-coat.jpg",
     href: "/field-notes/crunch-coat-cone",
     summary: "Vanilla soft serve buried under sweet golden crunch and rainbow sprinkles at Jimmies Dairy Bar in Pendleton.",
-    publishedAt: "2026-08-25T11:00:00-04:00",
+    publishedAt: "2026-08-25T16:30:00-04:00",
+    guid: "/field-notes/crunch-coat-cone#instagram-backfill-2026-08-25",
   },
 ];
 
@@ -55,7 +58,7 @@ export async function GET() {
     return `<item>
       <title>${escapeXml(entry.title)}</title>
       <link>${link}</link>
-      <guid isPermaLink="false">${link}</guid>
+      <guid isPermaLink="false">${SITE_URL}${entry.guid ?? entry.href}</guid>
       <description>${escapeXml(entry.summary)}</description>
       <category>${escapeXml(entry.category)}</category>
       <pubDate>${new Date(entry.publishedAt).toUTCString()}</pubDate>
