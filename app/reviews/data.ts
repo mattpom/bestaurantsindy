@@ -10,6 +10,15 @@ export type ReviewEntry = {
 
 export const reviewEntries: ReviewEntry[] = [
   {
+    title: "Hall of Sean: Spoke & Steele’s Pork Chop",
+    category: "Dinner",
+    verdict: "Hall of Sean",
+    image: "/chop-clean.png",
+    href: "/reviews/pork-chop-field-note",
+    summary: "The exact pork chop pictured is no longer on the current menu, but it remains a memorable example of the confident, polished food Spoke & Steele can put on the table.",
+    publishedAt: "2026-08-25T12:20:00-04:00",
+  },
+  {
     title: "Hooray for Ray",
     category: "Ramen Ray",
     verdict: "Order the Spicy Miso",
