@@ -5,6 +5,7 @@ export function FieldNote({
   category,
   verdict,
   image,
+  imageClassName,
   children,
   noteTitle = "Why the restaurant name is not shown yet",
   note = "BestaurantsIndy does not publish a restaurant name, current price, address, hours or visit date until Sean verifies the complete record. The photograph and field note are real; the missing facts are not being guessed.",
