@@ -3,7 +3,6 @@ import Link from "next/link";
 const cards = [
   ["Ramen Ray","Hooray for Ray","The Spicy Miso brings pork broth, chili heat, chashu, egg, noodles, and vegetables together in one serious bowl.","ORDER THE SPICY MISO","ramen"],
   ["Broad Ripple","The Day Lox Took a Back Seat","The Tonya Harding stacks turkey, ham, bacon, Colby, and Swiss on a hot steamed bagel.","ORDER THIS","bagel"],
-  ["Dinner decision","When the pork chop is the obvious answer","A serious plate for the night when nobody wants a cautious dinner.","WORTH THE PRICE","chop"],
 ];
 const guides = [
   ["TAKE THE VISITORS","Where to take out-of-town guests without embarrassing Indianapolis."],
