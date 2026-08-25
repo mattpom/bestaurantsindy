@@ -32,3 +32,6 @@
 
 /* Keep the vertical cone photograph at its natural proportions; no square padding. */
 .articleImage.portraitArticleImage{aspect-ratio:auto;height:auto;object-fit:unset;background:transparent}
+
+/* Field Notes has its own small-plates identity, separate from full Reviews. */
+.fieldNotesPage{background:#f8fbff}.fieldNotesPage .pageHero{position:relative;background:linear-gradient(135deg,#d9eaff 0%,#f3f8ff 62%,#ffffff 100%);border-bottom:8px solid var(--gold)}.fieldNotesPage .pageHero:after{content:"QUICK BITES · LOCAL FINDS · INDY-AREA FOOD";display:block;margin-top:34px;color:#26486f;font-size:10px;font-weight:950;letter-spacing:.18em}.fieldNotesPage .fieldNoteCard{border-top:8px solid var(--gold);background:white}.fieldNotesPage .fieldNoteCard span{color:#26486f}.fieldNotesPage .fieldNoteCard b{color:var(--red)}
