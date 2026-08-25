@@ -3,7 +3,7 @@ import Link from "next/link";
 export function SiteHeader(){
   return <header>
     <Link className="logo" href="/">Bestaurants<span>Indy</span></Link>
-    <nav><a href="/reviews">Reviews</a><a href="/field-notes">Field Notes</a><a href="/out-of-sight-not-out-of-mind">Out of Sight, Not Out of Mind</a><a href="/guides">Guides</a><a href="/neighborhoods">Neighborhoods</a><a href="/about">About Sean</a></nav>
+    <nav><a href="/reviews">Reviews</a><a href="/field-notes">Field Notes</a><a href="/guides">Guides</a><a href="/neighborhoods">Neighborhoods</a><a href="/out-of-sight-not-out-of-mind">Out of Sight, Not Out of Mind</a><a href="/about">About Sean</a></nav>
     <a className="ig" href="https://www.instagram.com/bestaurantsindy/" target="_blank" rel="noreferrer">@bestaurantsindy</a>
   </header>
 }
