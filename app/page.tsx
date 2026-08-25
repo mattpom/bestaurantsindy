@@ -1,8 +1,9 @@
 import Link from "next/link";
 
 const cards = [
-  ["Ramen Ray","Hooray for Ray","The Spicy Miso brings pork broth, chili heat, chashu, egg, noodles, and vegetables together in one serious bowl.","ORDER THE SPICY MISO","ramen"],
-  ["Broad Ripple","The Day Lox Took a Back Seat","The Tonya Harding stacks turkey, ham, bacon, Colby, and Swiss on a hot steamed bagel.","ORDER THIS","bagel"],
+  ["Ramen Ray","Hooray for Ray","The Spicy Miso brings pork broth, chili heat, chashu, egg, noodles, and vegetables together in one serious bowl.","ORDER THE SPICY MISO","ramen","/reviews/ramen-field-note"],
+  ["Broad Ripple","The Day Lox Took a Back Seat","The Tonya Harding stacks turkey, ham, bacon, Colby, and Swiss on a hot steamed bagel.","ORDER THIS","bagel","/reviews/bagel-field-note"],
+  ["Wings","No, You Can Be My Wingman","Korean fried chicken, Buffalo wings, and why soy garlic now holds Sean’s top spot.","NEW #1","wing","/reviews/wingman"],
 ];
 const guides = [
   ["TAKE THE VISITORS","Where to take out-of-town guests without embarrassing Indianapolis."],
@@ -37,9 +38,9 @@ export default function Home() {
     <section className="section" id="latest">
       <div className="heading"><div><p className="eyebrow">LATEST INTELLIGENCE</p><h2>Eat better this week.</h2></div><p>Three opinions. Zero committee meetings.</p></div>
       <div className="cards">
-        {cards.map(([kicker,title,copy,verdict,img])=><article key={title}>
-          <div className={`cardImg ${img}`} role="img" aria-label={title}><span>{verdict}</span></div>
-          <div className="cardCopy"><p className="kicker">{kicker}</p><h3>{title}</h3><p>{copy}</p><a href={img==="ramen"?"/reviews/ramen-field-note":img==="bagel"?"/reviews/bagel-field-note":"/reviews/pork-chop-field-note"}>Read Sean&apos;s take →</a></div>
+        {cards.map(([kicker,title,copy,verdict,img,href])=><article key={title}>
+          <div className={`cardImg ${img}`} style={img==="wing"?{backgroundImage:"url(/colonel-crying.webp)"}:undefined} role="img" aria-label={title}><span>{verdict}</span></div>
+          <div className="cardCopy"><p className="kicker">{kicker}</p><h3>{title}</h3><p>{copy}</p><a href={href}>Read Sean&apos;s take →</a></div>
         </article>)}
       </div>
       <p className="note">Launch stories are being prepared from Sean&apos;s original visits. Restaurant names, prices, and current details will appear only after verification.</p>
