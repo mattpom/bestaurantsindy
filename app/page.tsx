@@ -1,7 +1,7 @@
 import Link from "next/link";
 
 const cards = [
-  ["Worth the drive","A bowl of ramen that makes its own argument","Rich broth, a jammy egg, and enough restraint to let every ingredient do its job.","GO OUT OF YOUR WAY","ramen"],
+  ["Ramen Ray","Hooray for Ray","The Spicy Miso brings pork broth, chili heat, chashu, egg, noodles, and vegetables together in one serious bowl.","ORDER THE SPICY MISO","ramen"],
   ["Broad Ripple","The Day Lox Took a Back Seat","The Tonya Harding stacks turkey, ham, bacon, Colby, and Swiss on a hot steamed bagel.","ORDER THIS","bagel"],
   ["Dinner decision","When the pork chop is the obvious answer","A serious plate for the night when nobody wants a cautious dinner.","WORTH THE PRICE","chop"],
 ];
@@ -27,9 +27,9 @@ export default function Home() {
         <p className="deck">What to order. What it costs. Whether it is worth driving across town. No vague praise. No directory of every place with a fryer.</p>
         <div className="actions"><a className="button red" href="#latest">Find your next meal</a><a className="under" href="#sean">Meet Sean ↘</a></div>
       </div>
-      <div className="heroImg ramen" role="img" aria-label="Bowl of ramen with egg, vegetables and mushrooms">
+      <div className="heroImg ramen" role="img" aria-label="Ramen Ray Spicy Miso ramen with chashu, egg, noodles, and vegetables">
         <div className="stamp"><small>SEAN SAYS</small><b>GO.</b></div>
-        <div className="caption"><small>THE CURRENT OBSESSION</small><strong>A bowl worth crossing town for</strong></div>
+        <div className="caption"><small>THE CURRENT OBSESSION</small><strong>Ramen Ray&apos;s Spicy Miso</strong></div>
       </div>
     </section>
 
