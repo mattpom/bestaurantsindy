@@ -27,7 +27,7 @@ export default function Home() {
         <p className="deck">What to order. What it costs. Whether it is worth driving across town. No vague praise. No directory of every place with a fryer.</p>
         <div className="actions"><a className="button red" href="#latest">Find your next meal</a><a className="under" href="#sean">Meet Sean ↘</a></div>
       </div>
-      <div className="heroImg" style={{backgroundImage:"url(/mamas-dolsot-bibimbap.jpg)"}} role="img" aria-label="Dolsot bibimbap with vegetables, beef, and fried egg at Mama’s Korean Restaurant">
+      <div className="heroImg" style={{backgroundImage:"url(/mamas-dolsot-bibimbap.jpg)",backgroundSize:"cover",backgroundPosition:"center 58%",backgroundColor:"transparent"}} role="img" aria-label="Dolsot bibimbap with vegetables, beef, and fried egg at Mama’s Korean Restaurant">
         <div className="stamp"><small>SEAN SAYS</small><b>GO.</b></div>
         <div className="caption"><small>THE CURRENT OBSESSION</small><strong>Mama&apos;s Dolsot Bibimbap</strong></div>
       </div>
@@ -39,7 +39,7 @@ export default function Home() {
       <div className="heading"><div><p className="eyebrow">LATEST INTELLIGENCE</p><h2>Eat better this week.</h2></div><p>Three opinions. Zero committee meetings.</p></div>
       <div className="cards">
         {cards.map(([kicker,title,copy,verdict,img,href])=><article key={title}>
-          <div className={`cardImg ${img}`} style={img==="wing"?{backgroundImage:"url(/colonel-crying.webp)"}:img==="mama"?{backgroundImage:"url(/mamas-dolsot-bibimbap.jpg)"}:undefined} role="img" aria-label={title}><span>{verdict}</span></div>
+          <div className={`cardImg ${img}`} style={img==="wing"?{backgroundImage:"url(/colonel-crying.webp)"}:img==="mama"?{backgroundImage:"url(/mamas-dolsot-bibimbap.jpg)",backgroundSize:"cover",backgroundPosition:"center 58%",backgroundColor:"transparent"}:undefined} role="img" aria-label={title}><span>{verdict}</span></div>
           <div className="cardCopy"><p className="kicker">{kicker}</p><h3>{title}</h3><p>{copy}</p><a href={href}>Read Sean&apos;s take →</a></div>
         </article>)}
       </div>
