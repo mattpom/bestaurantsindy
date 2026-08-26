@@ -14,7 +14,7 @@
 /* Standalone food photography: never use the Instagram screenshot as an image source. */
 .heroImg,.cardImg{background-color:#dceaff;background-repeat:no-repeat;background-position:center;background-size:contain}
 .ramen{background-image:url('/ramen-clean.png')}.bagel{background-image:url('/bagel-clean.png')}.chop{background-image:url('/chop-clean.png')}
-.heroImg{min-height:0;aspect-ratio:1;background-size:cover;background-position:center}
+.heroImg{min-height:0;aspect-ratio:1;background-size:cover;background-position:center}\n.heroImg.mamaHero{background-size:contain;background-position:center}
 .cardImg{height:auto;aspect-ratio:1}
 @media(max-width:900px){.heroImg{min-height:0;aspect-ratio:1}.cardImg{height:auto;aspect-ratio:1}}
 @media(max-width:620px){.heroCopy{padding-top:72px;padding-bottom:72px}.heroCopy h1{font-size:clamp(50px,15vw,72px);line-height:.92}.heroImg{min-height:0;aspect-ratio:1}.cardImg{height:auto;aspect-ratio:1}}
