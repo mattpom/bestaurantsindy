@@ -27,7 +27,7 @@ export default function Home() {
         <p className="deck">What to order. What it costs. Whether it is worth driving across town. No vague praise. No directory of every place with a fryer.</p>
         <div className="actions"><a className="button red" href="#latest">Find your next meal</a><a className="under" href="#sean">Meet Sean ↘</a></div>
       </div>
-      <div className="heroImg mamaHero" style={{backgroundImage:"url(/mamas-dolsot-bibimbap.jpg)"}} role="img" aria-label="Dolsot bibimbap with vegetables, beef, and fried egg at Mama’s Korean Restaurant">
+      <div className="heroImg" style={{backgroundImage:"url(/mamas-dolsot-bibimbap.jpg)"}} role="img" aria-label="Dolsot bibimbap with vegetables, beef, and fried egg at Mama’s Korean Restaurant">
         <div className="stamp"><small>SEAN SAYS</small><b>GO.</b></div>
         <div className="caption"><small>THE CURRENT OBSESSION</small><strong>Mama&apos;s Dolsot Bibimbap</strong></div>
       </div>
