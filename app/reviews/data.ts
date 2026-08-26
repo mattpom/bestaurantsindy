@@ -10,6 +10,15 @@ export type ReviewEntry = {
 
 export const reviewEntries: ReviewEntry[] = [
   {
+    title: "The Best Part Is at the Bottom",
+    category: "Mama’s Korean Restaurant",
+    verdict: "Let It Sit",
+    image: "/mamas-dolsot-bibimbap.jpg",
+    href: "/reviews/mamas-dolsot-bibimbap",
+    summary: "Mama’s dolsot bibimbap arrives sizzling with rice, vegetables, beef, and egg. Sean’s advice: wait before mixing so the rice against the stone turns deeply crisp.",
+    publishedAt: "2026-08-26T06:00:00-04:00",
+  },
+  {
     title: "Hall of Sean: Spoke & Steele’s Pork Chop",
     category: "Dinner",
     verdict: "Hall of Sean",
