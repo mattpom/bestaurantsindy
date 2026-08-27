@@ -1,0 +1,5 @@
+import {SiteHeader,SiteFooter} from "../../components/SiteChrome";
+
+export const metadata={title:"Say It, Don’t Spray It | BestaurantsIndy",description:"Sean Matthews on Indianapolis food culture, restaurant trends, service, pricing, and what the city is missing."};
+
+export default function Page(){return <main className="opinionPage"><SiteHeader/><section className="pageHero"><p className="eyebrow">SAY IT, DON&apos;T SPRAY IT</p><h1>Strong opinions. Minimal table cleanup.</h1><p>Sean Matthews on Indianapolis food culture, restaurant trends, pricing, service, and the dining ideas this city is still missing.</p></section><section className="contentPage opinionGrid"><a className="opinionCard" href="/say-it-dont-spray-it/indianapolis-seafood-problem"><div><span>ONE MAN&apos;S OPINION</span><h2>Indianapolis Has a Seafood Problem</h2><p>Where is the casual alternative to Red Lobster? And no, sushi does not answer the question.</p></div><b>Read Sean&apos;s take →</b></a></section><SiteFooter/></main>}
