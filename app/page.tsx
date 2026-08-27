@@ -16,7 +16,7 @@ export default function Home() {
   return <main>
     <header>
       <a className="logo" href="#top">Bestaurants<span>Indy</span></a>
-      <nav><a href="/reviews">Reviews</a><a href="/field-notes">Field Notes</a><a href="/guides">Guides</a><a href="/neighborhoods">Neighborhoods</a><a href="/out-of-sight-not-out-of-mind">Out of Sight, Not Out of Mind</a><a href="#say-it-dont-spray-it">Say It, Don&apos;t Spray It</a><a href="/about">About Sean</a></nav>
+      <nav><a href="/reviews">Reviews</a><a href="/field-notes">Field Notes</a><a href="/guides">Guides</a><a href="/neighborhoods">Neighborhoods</a><a href="/out-of-sight-not-out-of-mind">Out of Sight, Not Out of Mind</a><a href="/say-it-dont-spray-it">Say It, Don&apos;t Spray It</a><a href="/about">About Sean</a></nav>
       <a className="ig" href="https://www.instagram.com/bestaurantsindy/" target="_blank" rel="noreferrer">@bestaurantsindy</a>
     </header>
 
@@ -57,37 +57,8 @@ export default function Home() {
     </section>
 
     <section className="sayHome section" id="say-it-dont-spray-it">
-      <div className="sayIntro"><p className="eyebrow">SAY IT, DON&apos;T SPRAY IT</p><h2>Strong opinions. Minimal table cleanup.</h2><p>Sean on Indianapolis food culture, restaurant trends, pricing, service, and the dining ideas this city is still missing.</p><a className="button red" href="#indianapolis-needs-casual-seafood">Read the First Opinion</a></div>
-      <a className="sayFeature" href="#indianapolis-needs-casual-seafood"><div><span>THE FIRST OPINION</span><h3>Indianapolis Has a Seafood Problem</h3><p>Where is the casual alternative to Red Lobster? And no, sushi does not answer the question.</p><b>Read Sean&apos;s take →</b></div></a>
-    </section>
-
-    <section className="opinionInline section" id="indianapolis-needs-casual-seafood">
-      <p className="eyebrow">SAY IT, DON&apos;T SPRAY IT · ONE MAN&apos;S OPINION</p>
-      <h2>Indianapolis Has a Seafood Problem</h2>
-      <p className="opinionDeck">Where is the casual alternative to Red Lobster? And no, I am not talking about sushi.</p>
-      <div className="opinionProse">
-        <p>Indianapolis has plenty of places where you can eat something that once lived in water. We have sushi. We have seafood boils served in plastic bags. We have fried fish sandwiches. We have upscale restaurants where the sea bass arrives looking like it has its own financial adviser.</p>
-        <p>What we do not seem to have is a strong, dependable, casual seafood restaurant that fills the enormous space between fast food and a special-occasion dinner.</p>
-        <p>In other words: where is the alternative to Red Lobster?</p>
-        <p>That is not an insult to Red Lobster. It is an admission that Red Lobster understands a category Indianapolis has mostly left uncontested.</p>
-        <h3>The Missing Middle</h3>
-        <p>Sometimes you want seafood without making an event out of it. You want grilled shrimp, broiled fish, crab cakes, fried clams, scallops, coconut shrimp, chowder, baked potatoes, vegetables, and a basket of bread that ruins any responsible plan you had for the evening.</p>
-        <p>You want a menu broad enough for a family, familiar enough for cautious eaters, and affordable enough that nobody needs to call it an anniversary.</p>
-        <blockquote>Indianapolis has restaurants at both ends of the spectrum. What is missing is the middle.</blockquote>
-        <h3>Sushi Does Not Solve This</h3>
-        <p>Sushi is seafood, but it is not a substitute for a casual American seafood restaurant any more than tacos are a substitute for a steakhouse. If I want grilled shrimp, rice, vegetables, and clam chowder, handing me a spicy tuna roll does not solve the problem.</p>
-        <p>I like sushi. This is not an attack on sushi. Sushi simply has nothing to do with the question.</p>
-        <h3>Neither Does the Seafood Boil</h3>
-        <p>A boil is its own experience. It usually means gloves, bibs, seasoning choices, and an amount of shell cracking that starts to feel like unpaid labor. Sometimes that is exactly what you want. Sometimes you just want a piece of grilled fish and two sides.</p>
-        <h3>Upscale Seafood Is Not Casual Seafood</h3>
-        <p>A $40 entrée is not the alternative to Red Lobster. It is an alternative to another $40 entrée. The missing restaurant is one you can visit on a Tuesday because you felt like eating seafood—not because somebody graduated, got promoted, retired, or survived another year of marriage.</p>
-        <h3>Why Has Nobody Claimed This Space?</h3>
-        <p>Seafood is difficult. It is perishable, expensive, sensitive to transportation, and much less forgiving than a freezer full of hamburger patties. Those realities explain the challenge. They do not erase the opportunity.</p>
-        <p>Keep the menu focused: dependable fish, grilled and fried preparations, good shrimp, a credible crab cake, chowder, combination platters, thoughtful sides, and a few non-seafood choices for the person who was outvoted.</p>
-        <p>People do not need a nautical theme park. They need seafood they trust at a price they can justify.</p>
-        <h3>The Verdict</h3>
-        <p><strong>Indianapolis does not lack seafood. It lacks a casual seafood alternative.</strong> Sushi is not the answer. A seafood boil is not the same thing. An expensive dinner downtown does not fill the gap. Red Lobster should have competition, Indianapolis should have choices, and somebody should claim this space before we are forced to pretend another poke bowl solved the problem.</p>
-      </div>
+      <div className="sayIntro"><p className="eyebrow">SAY IT, DON&apos;T SPRAY IT</p><h2>Strong opinions. Minimal table cleanup.</h2><p>Sean on Indianapolis food culture, restaurant trends, pricing, service, and the dining ideas this city is still missing.</p><a className="button red" href="/say-it-dont-spray-it">Read the Opinions</a></div>
+      <a className="sayFeature" href="/say-it-dont-spray-it/indianapolis-seafood-problem"><div><span>THE FIRST OPINION</span><h3>Indianapolis Has a Seafood Problem</h3><p>Where is the casual alternative to Red Lobster? And no, sushi does not answer the question.</p><b>Read Sean&apos;s take →</b></div></a>
     </section>
 
     <section className="guides section" id="guides">
@@ -114,6 +85,6 @@ export default function Home() {
 
     <section className="dispatch section" id="dispatch"><p className="eyebrow">THE FIRST DISPATCHES</p><h2>BestaurantsIndy is just getting seated.</h2><p>The first full restaurant stories are coming next. Until then, follow the original recommendations and food photos on Instagram.</p><a className="button red" href="https://www.instagram.com/bestaurantsindy/" target="_blank" rel="noreferrer">Visit @bestaurantsindy</a></section>
 
-    <footer><Link className="logo" href="/">Bestaurants<span>Indy</span></Link><p>Indianapolis restaurants worth leaving the house for.</p><div><a href="/reviews">Reviews</a><a href="/field-notes">Field Notes</a><a href="#say-it-dont-spray-it">Say It, Don&apos;t Spray It</a><a href="/guides">Guides</a><a href="/about">About</a><a href="/editorial-policy">Editorial policy</a></div><small>© 2026 BestaurantsIndy. Opinions are Sean&apos;s. Sponsored or hosted meals will be labeled plainly.</small></footer>
+    <footer><Link className="logo" href="/">Bestaurants<span>Indy</span></Link><p>Indianapolis restaurants worth leaving the house for.</p><div><a href="/reviews">Reviews</a><a href="/field-notes">Field Notes</a><a href="/say-it-dont-spray-it">Say It, Don&apos;t Spray It</a><a href="/guides">Guides</a><a href="/about">About</a><a href="/editorial-policy">Editorial policy</a></div><small>© 2026 BestaurantsIndy. Opinions are Sean&apos;s. Sponsored or hosted meals will be labeled plainly.</small></footer>
   </main>
 }
