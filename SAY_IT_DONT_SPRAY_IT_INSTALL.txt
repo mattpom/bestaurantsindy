@@ -1,0 +1,29 @@
+BESTAURANTSINDY — SAY IT, DON'T SPRAY IT UPDATE
+
+YES — UNZIP THIS FILE FIRST.
+
+Upload the extracted app and components folders to the ROOT of the
+mattpom/bestaurantsindy GitHub repository.
+
+Allow GitHub to merge the folders and replace these existing files:
+
+app/page.tsx
+app/globals.css
+components/SiteChrome.tsx
+
+The following files and folders are new:
+
+app/say-it-dont-spray-it/page.tsx
+app/say-it-dont-spray-it/indianapolis-needs-casual-seafood/page.tsx
+
+Commit all five code files together to the main branch.
+
+The update adds:
+
+- Say It, Don't Spray It to the site navigation and footer
+- A homepage feature for the new opinion section
+- A dedicated section landing page
+- Indianapolis Has a Seafood Problem as the first post
+- Responsive styling that matches the existing blue-and-white site
+
+Do not upload the ZIP itself.

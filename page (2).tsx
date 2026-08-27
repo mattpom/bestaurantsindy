@@ -1,4 +1,7 @@
-import {SiteFooter,SiteHeader} from "../../components/SiteChrome";
-const guides=[["Taking out-of-town guests","A growing shortlist for showing off Indianapolis without defaulting to the obvious answer."],["Date night","Food good enough to justify the atmosphere—and atmosphere that does not drown out dinner."],["Lunch under $20","Real lunch, useful prices, and no financial-planning session afterward."],["Worth the drive","The standard is simple: the meal must justify crossing town."]];
-export const metadata={title:"Indianapolis Restaurant Guides | BestaurantsIndy"};
-export default function Guides(){return <main><SiteHeader/><section className="pageHero"><p className="eyebrow">DECIDE FASTER</p><h1>Restaurant guides built around real decisions.</h1><p>No forty-place lists assembled for search traffic. Each guide stays unpublished until it contains enough verified recommendations to be useful.</p></section><section className="contentPage"><div className="guideCards">{guides.map(([t,p],i)=><article key={t}><span>0{i+1}</span><h2>{t}</h2><p>{p}</p><b>IN DEVELOPMENT</b></article>)}</div></section><SiteFooter/></main>}
+import { SiteHeader, SiteFooter } from "../../components/SiteChrome";
+
+export const metadata={title:"Say It, Don't Spray It | BestaurantsIndy",description:"Sean Matthews on Indianapolis food culture, restaurant trends, prices, service, and the dining ideas this city is still missing."};
+
+const opinions=[{title:"Indianapolis Has a Seafood Problem",label:"INDIANAPOLIS · SEAFOOD",href:"/say-it-dont-spray-it/indianapolis-needs-casual-seafood",summary:"Where is the casual alternative to Red Lobster? Indianapolis has seafood, but it is missing the dependable middle."}];
+
+export default function Page(){return <main className="opinionPage"><SiteHeader/><section className="pageHero"><p className="eyebrow">SAY IT, DON&apos;T SPRAY IT</p><h1>Strong opinions. Minimal table cleanup.</h1><p>Sean on Indianapolis food culture, restaurant trends, pricing, service, and everything this city should be doing better.</p></section><section className="contentPage opinionGrid">{opinions.map(opinion=><a className="opinionCard" href={opinion.href} key={opinion.title}><div><span>{opinion.label}</span><h2>{opinion.title}</h2><p>{opinion.summary}</p></div><b>Read Sean&apos;s take →</b></a>)}</section><SiteFooter/></main>}
