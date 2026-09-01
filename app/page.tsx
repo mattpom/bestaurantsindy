@@ -85,6 +85,6 @@ export default function Home() {
 
     <section className="dispatch section" id="dispatch"><p className="eyebrow">THE FIRST DISPATCHES</p><h2>BestaurantsIndy is just getting seated.</h2><p>The first full restaurant stories are coming next. Until then, follow the original recommendations and food photos on Instagram.</p><a className="button red" href="https://www.instagram.com/bestaurantsindy/" target="_blank" rel="noreferrer">Visit @bestaurantsindy</a></section>
 
-    <footer><Link className="logo" href="/">Bestaurants<span>Indy</span></Link><p>Indianapolis restaurants worth leaving the house for.</p><div><a href="/reviews">Reviews</a><a href="/field-notes">Field Notes</a><a href="/say-it-dont-spray-it">Say It, Don&apos;t Spray It</a><a href="/guides">Guides</a><a href="/about">About</a><a href="/editorial-policy">Editorial policy</a></div><small>© 2026 BestaurantsIndy. Opinions are Sean&apos;s. Sponsored or hosted meals will be labeled plainly.</small></footer>
+    <footer><Link className="logo" href="/">Bestaurants<span>Indy</span></Link><p>Indianapolis restaurants worth leaving the house for.</p><div><a href="/reviews">Reviews</a><a href="/field-notes">Field Notes</a><a href="/say-it-dont-spray-it">Say It, Don&apos;t Spray It</a><a href="/guides">Guides</a><a href="/about">About</a><a href="/editorial-policy">Editorial policy</a></div><small>© 2026 BestaurantsIndy · Owned and operated by Mattpom Digital Ventures LLC. Opinions are Sean&apos;s. Sponsored or hosted meals will be labeled plainly.</small></footer>
   </main>
 }
