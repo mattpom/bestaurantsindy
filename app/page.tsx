@@ -1,9 +1,9 @@
 import Link from "next/link";
 
 const cards = [
+  ["Goose the Market","I Got Goosed and Liked It","Prosciutto, fresh mozzarella, basil, black pepper, and olive oil prove that a sandwich does not need excess.","ORDER THE GOOSE","goose","/reviews/i-got-goosed-and-liked-it"],
   ["Mama’s Korean Restaurant","The Best Part Is at the Bottom","Dolsot bibimbap arrives sizzling. Give the rice time against the stone before you mix it.","LET IT SIT","mama","/reviews/mamas-dolsot-bibimbap"],
   ["Broad Ripple","The Day Lox Took a Back Seat","The Tonya Harding stacks turkey, ham, bacon, Colby, and Swiss on a hot steamed bagel.","ORDER THIS","bagel","/reviews/bagel-field-note"],
-  ["Wings","No, You Can Be My Wingman","Korean fried chicken, Buffalo wings, and why soy garlic now holds Sean’s top spot.","NEW #1","wing","/reviews/wingman"],
 ];
 const guides = [
   ["TAKE THE VISITORS","Where to take out-of-town guests without embarrassing Indianapolis."],
@@ -27,9 +27,9 @@ export default function Home() {
         <p className="deck">What to order. What it costs. Whether it is worth driving across town. No vague praise. No directory of every place with a fryer.</p>
         <div className="actions"><a className="button red" href="#latest">Find your next meal</a><a className="under" href="#sean">Meet Sean ↘</a></div>
       </div>
-      <div className="heroImg" style={{backgroundImage:"url(/mamas-dolsot-bibimbap.jpg)",backgroundSize:"cover",backgroundPosition:"center 58%",backgroundColor:"transparent"}} role="img" aria-label="Dolsot bibimbap with vegetables, beef, and fried egg at Mama’s Korean Restaurant">
+      <div className="heroImg" style={{backgroundImage:"url(/goose-sandwich.jpg)",backgroundSize:"cover",backgroundPosition:"center",backgroundColor:"transparent"}} role="img" aria-label="The Goose sandwich with prosciutto and fresh mozzarella at Goose the Market">
         <div className="stamp"><small>SEAN SAYS</small><b>GO.</b></div>
-        <div className="caption"><small>THE CURRENT OBSESSION</small><strong>Mama&apos;s Dolsot Bibimbap</strong></div>
+        <div className="caption"><small>THE CURRENT OBSESSION</small><strong>The Goose at Goose the Market</strong></div>
       </div>
     </section>
 
@@ -39,7 +39,7 @@ export default function Home() {
       <div className="heading"><div><p className="eyebrow">LATEST INTELLIGENCE</p><h2>Eat better this week.</h2></div><p>Three opinions. Zero committee meetings.</p></div>
       <div className="cards">
         {cards.map(([kicker,title,copy,verdict,img,href])=><article key={title}>
-          <div className={`cardImg ${img}`} style={img==="wing"?{backgroundImage:"url(/colonel-crying.webp)"}:img==="mama"?{backgroundImage:"url(/mamas-dolsot-bibimbap.jpg)",backgroundSize:"cover",backgroundPosition:"center 58%",backgroundColor:"transparent"}:undefined} role="img" aria-label={title}><span>{verdict}</span></div>
+          <div className={`cardImg ${img}`} style={img==="goose"?{backgroundImage:"url(/goose-sandwich.jpg)",backgroundSize:"cover",backgroundPosition:"center",backgroundColor:"transparent"}:img==="mama"?{backgroundImage:"url(/mamas-dolsot-bibimbap.jpg)",backgroundSize:"cover",backgroundPosition:"center 58%",backgroundColor:"transparent"}:undefined} role="img" aria-label={title}><span>{verdict}</span></div>
           <div className="cardCopy"><p className="kicker">{kicker}</p><h3>{title}</h3><p>{copy}</p><a href={href}>Read Sean&apos;s take →</a></div>
         </article>)}
       </div>
