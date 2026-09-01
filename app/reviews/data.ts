@@ -10,6 +10,15 @@ export type ReviewEntry = {
 
 export const reviewEntries: ReviewEntry[] = [
   {
+    title: "I Got Goosed and Liked It",
+    category: "Goose the Market",
+    verdict: "Order the Goose",
+    image: "/goose-sandwich.jpg",
+    href: "/reviews/i-got-goosed-and-liked-it",
+    summary: "Prosciutto, fresh mozzarella, basil, black pepper, and olive oil prove a sandwich does not need excess when every ingredient earns its place.",
+    publishedAt: "2026-09-01T18:30:00-04:00",
+  },
+  {
     title: "The Best Part Is at the Bottom",
     category: "Mama’s Korean Restaurant",
     verdict: "Let It Sit",
