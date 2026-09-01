@@ -8,5 +8,5 @@ export function SiteHeader(){
   </header>
 }
 export function SiteFooter(){
-  return <footer><Link className="logo" href="/">Bestaurants<span>Indy</span></Link><p>Indianapolis restaurants worth leaving the house for.</p><div><a href="/reviews">Reviews</a><a href="/field-notes">Field Notes</a><a href="/#say-it-dont-spray-it">Say It, Don&apos;t Spray It</a><a href="/guides">Guides</a><a href="/about">About</a><a href="/editorial-policy">Editorial policy</a></div><small>© 2026 BestaurantsIndy · Owned and operated by Mattpom Digital Ventures LLC. Opinions are Sean&apos;s. Sponsored or hosted meals are labeled plainly.</small></footer>
+  return <footer><Link className="logo" href="/">Bestaurants<span>Indy</span></Link><p>Indianapolis restaurants worth leaving the house for.</p><div><a href="/reviews">Reviews</a><a href="/field-notes">Field Notes</a><a href="/#say-it-dont-spray-it">Say It, Don&apos;t Spray It</a><a href="/guides">Guides</a><a href="/about">About</a><a href="/editorial-policy">Editorial policy</a><a href="/privacy">Privacy</a><a href="/terms">Terms</a><a href="/affiliate-disclosure">Affiliate disclosure</a><a href="/cookie-policy">Cookie policy</a></div><small>© 2026 BestaurantsIndy · Owned and operated by Mattpom Digital Ventures LLC. Opinions are Sean&apos;s. Sponsored or hosted meals are labeled plainly.</small></footer>
 }
