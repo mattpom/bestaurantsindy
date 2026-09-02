@@ -14,6 +14,13 @@ const guides = [
 
 export default function Home() {
   return <main>
+    <script type="application/ld+json" dangerouslySetInnerHTML={{__html:JSON.stringify({
+      "@context":"https://schema.org",
+      "@graph":[
+        {"@type":"WebSite","name":"BestaurantsIndy","url":"https://bestaurantsindy.com","description":"Indianapolis restaurant reviews, field notes, guides, and dining opinions."},
+        {"@type":"Organization","name":"BestaurantsIndy","url":"https://bestaurantsindy.com","logo":"https://bestaurantsindy.com/og.png"}
+      ]
+    })}} />
     <header>
       <a className="logo" href="#top">Bestaurants<span>Indy</span></a>
       <nav><a href="/reviews">Reviews</a><a href="/field-notes">Field Notes</a><a href="/guides">Guides</a><a href="/neighborhoods">Neighborhoods</a><a href="/out-of-sight-not-out-of-mind">Out of Sight, Not Out of Mind</a><a href="/say-it-dont-spray-it">Say It, Don&apos;t Spray It</a><a href="/about">About Sean</a></nav>
