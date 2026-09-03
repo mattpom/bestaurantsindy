@@ -1,0 +1,42 @@
+export type RestaurantPick={name:string;label:string;best:string;note:string;price:string;href:string};
+export type Neighborhood={id:string;name:string;intro:string;anchor:string;restaurants:RestaurantPick[]};
+
+export const neighborhoods:Neighborhood[]=[
+  {id:"downtown",name:"Downtown",intro:"The Indianapolis essentials: historic dining rooms, serious steaks, and polished places built for a night that matters.",anchor:"St. Elmo Steak House",restaurants:[
+    {name:"St. Elmo Steak House",label:"THE INDY LANDMARK",best:"Best for: the classic Indianapolis experience",note:"The city’s defining steakhouse, open since 1902. The shrimp cocktail is the ritual; the steaks and old-school service make it an institution.",price:"$$$$",href:"https://www.stelmos.com/"},
+    {name:"Commission Row",label:"BIG NIGHT OUT",best:"Best for: steak, seafood, and a polished celebration",note:"A contemporary downtown dining room beside Gainbridge Fieldhouse with a raw bar, serious steaks, and an occasion-worthy atmosphere.",price:"$$$$",href:"https://www.commissionrow.com/"},
+    {name:"Hinata",label:"TASTING MENU",best:"Best for: a deliberate, multi-course dinner",note:"An intimate Japanese tasting-menu experience for diners who want the kitchen to lead the evening.",price:"$$$$",href:"https://www.hinataindy.com/"},
+    {name:"Tony’s of Indianapolis",label:"STEAK & SEAFOOD",best:"Best for: downtown business dinners",note:"Prime steaks, seafood, and a deep wine list in a traditional upscale setting close to the convention district.",price:"$$$$",href:"https://tonysofindianapolis.com/"}
+  ]},
+  {id:"mass-ave",name:"Mass Ave",intro:"Lively, walkable, and useful when a group cannot agree on what it wants—tacos, fried chicken, cocktails, or something more polished.",anchor:"Bakersfield",restaurants:[
+    {name:"Bakersfield",label:"SEAN’S ANCHOR PICK",best:"Best for: tacos, tequila, and an energetic room",note:"A reliable Mass Ave choice when the table wants shareable tacos, strong drinks, and no ceremony.",price:"$$",href:"https://www.bakersfieldtacos.com/"},
+    {name:"The Eagle",label:"THE CROWD FAVORITE",best:"Best for: fried chicken and a social dinner",note:"One of the avenue’s busiest dining rooms, built around fried chicken, Southern sides, and a patio-friendly atmosphere.",price:"$$",href:"https://www.eaglerestaurant.com/"},
+    {name:"Bodhi",label:"COCKTAIL NIGHT",best:"Best for: Thai food with a serious bar program",note:"A stylish, adults-only spot pairing Thai dishes with cocktails that receive as much attention as the food.",price:"$$$",href:"https://www.bodhi-indy.com/"},
+    {name:"Livery",label:"DATE NIGHT",best:"Best for: Latin-inspired plates and rooftop drinks",note:"A converted livery stable with a strong setting, shareable dishes, and one of the district’s better date-night formulas.",price:"$$$",href:"https://www.livery-restaurant.com/"}
+  ]},
+  {id:"fountain-square",name:"Fountain Square",intro:"Fountain Square and neighboring Fletcher Place share one food corridor. The boundary matters on a map; it matters less when deciding where to eat.",anchor:"Bluebeard",restaurants:[
+    {name:"Bluebeard",label:"NEARBY · FLETCHER PLACE",best:"Best for: a changing menu and one of Indy’s strongest kitchens",note:"Contemporary American cooking in a converted warehouse, supported by Amelia’s bread and a menu that rewards curiosity.",price:"$$$",href:"https://bluebeardindy.com/"},
+    {name:"Geraldine’s Supper Club",label:"SUPPER CLUB",best:"Best for: steaks, seafood, and old-school atmosphere",note:"A throwback dining room with live-jazz energy, classic cocktails, and a menu designed for a full evening out.",price:"$$$$",href:"https://www.geraldinesindy.com/"},
+    {name:"Kuma’s Corner",label:"BURGERS",best:"Best for: oversized burgers and heavy-metal attitude",note:"Big, unapologetic burgers in the heart of Fountain Square. Go hungry and do not plan a light meal afterward.",price:"$$",href:"https://kumascorner.com/location/indianapolis/"},
+    {name:"Aroma Indian Cuisine",label:"INDIAN",best:"Best for: bold Indian cooking near the Cultural Trail",note:"A strong Virginia Avenue option for curries, tandoori dishes, and a meal with more range than another burger-and-beer stop.",price:"$$",href:"https://aromaindy.com/"}
+  ]},
+  {id:"broad-ripple",name:"Broad Ripple",intro:"More than bars: long-running neighborhood institutions, patios, brunch, Italian dinners, and restaurants that work on an ordinary Tuesday.",anchor:"Ambrosia",restaurants:[
+    {name:"Ambrosia",label:"SEAN’S ANCHOR PICK",best:"Best for: Italian dinner with neighborhood history",note:"The Pizzi family has served Italian food in Indianapolis since 1979. It remains polished enough for an occasion without losing its neighborhood character.",price:"$$$",href:"https://www.ambrosiaindy.com/"},
+    {name:"Petite Chou",label:"FRENCH BISTRO",best:"Best for: brunch, crepes, and a relaxed date",note:"A French-inspired Broad Ripple staple that works from breakfast through dinner, with one of the neighborhood’s most inviting patios.",price:"$$",href:"https://www.petitechoubistro.com/"},
+    {name:"Canal Bistro",label:"MEDITERRANEAN",best:"Best for: patio dining beside the canal",note:"Lebanese- and Egyptian-influenced food with a canal-side patio that gives the restaurant a genuine sense of place.",price:"$$",href:"https://www.canal-bistro.com/"},
+    {name:"Fire by the Monon",label:"CASUAL LOCAL",best:"Best for: an easy neighborhood meal",note:"American comfort food near the Monon Trail, with grilled flavors and the kind of relaxed room that encourages repeat visits.",price:"$$",href:"https://firebythemonon.com/"}
+  ]},
+  {id:"northside",name:"Northside",intro:"College Avenue favorites and destination dining farther north—places that justify leaving downtown and making a reservation.",anchor:"Delicia & Northside Social",restaurants:[
+    {name:"Delicia",label:"SEAN LOVES THIS ONE",best:"Best for: New Latin cooking and cocktails",note:"Latin American, Caribbean, and Spanish influences come together in one of College Avenue’s most distinctive dining rooms.",price:"$$$",href:"https://www.deliciaindy.com/"},
+    {name:"The Northside Social",label:"NEIGHBORHOOD FAVORITE",best:"Best for: approachable food and a comfortable night out",note:"A polished but unpretentious College Avenue restaurant with seasonal American cooking, cocktails, and the feel of a dependable local favorite.",price:"$$$",href:"https://www.northsidesocial.com/"},
+    {name:"Late Harvest Kitchen",label:"DESTINATION DINNER",best:"Best for: seasonal Midwestern cooking",note:"A northside destination with a seasonal menu, a warm dining room, and a reputation built on careful, ingredient-driven cooking.",price:"$$$",href:"https://www.lateharvestkitchen.com/"},
+    {name:"Provision",label:"MODERN UPSCALE",best:"Best for: a celebration north of downtown",note:"A modern American restaurant at Ironworks with an upscale dining room, rooftop setting, and a menu suited to special occasions.",price:"$$$$",href:"https://www.provision-restaurant.com/"}
+  ]}
+];
+
+export function RestaurantGrid({restaurants}:{restaurants:RestaurantPick[]}){
+  return <div className="restaurantPickGrid">{restaurants.map((r,i)=><article className={i===0?"restaurantPick featuredPick":"restaurantPick"} key={r.name}>
+    <div className="pickTop"><span>{r.label}</span><b>{r.price}</b></div><h3>{r.name}</h3><strong>{r.best}</strong><p>{r.note}</p>
+    <a href={r.href} target="_blank" rel="noreferrer">Visit restaurant website ↗</a>
+  </article>)}</div>
+}
