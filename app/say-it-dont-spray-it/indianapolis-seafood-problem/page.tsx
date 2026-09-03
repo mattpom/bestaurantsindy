@@ -1,5 +1,166 @@
-import {SiteHeader,SiteFooter} from "../../../components/SiteChrome";
+import { SiteHeader, SiteFooter } from "../../../components/SiteChrome";
 
-export const metadata={title:"Indianapolis Has a Seafood Problem | BestaurantsIndy",description:"Indianapolis has seafood, but it lacks a dependable casual alternative to Red Lobster. Sean Matthews explains the missing middle."};
+export const metadata = {
+  title: "Indianapolis Has a Seafood Problem | BestaurantsIndy",
+  description:
+    "Indianapolis has seafood, but it lacks a dependable casual alternative to Red Lobster. Sean Matthews explains the missing middle.",
+};
 
-export default function Page(){return <main><SiteHeader/><article className="articlePage opinionArticle"><div className="articleHead"><p className="eyebrow">SAY IT, DON&apos;T SPRAY IT · ONE MAN&apos;S OPINION</p><h1>Indianapolis Has a Seafood Problem</h1><p className="opinionDeck">Where is the casual alternative to Red Lobster? And no, I am not talking about sushi.</p><div className="opinionByline"><img src="/sean-profile-blue.png" alt="Sean Matthews"/><div><span>OPINION BY</span><strong>Sean Matthews</strong></div></div></div><div className="articleBody"><p>Indianapolis has plenty of places where you can eat something that once lived in water. We have sushi. We have seafood boils served in plastic bags. We have fried fish sandwiches. We have upscale restaurants where the sea bass arrives looking like it has its own financial adviser.</p><p>What we do not seem to have is a strong, dependable, casual seafood restaurant that fills the enormous space between fast food and a special-occasion dinner.</p><p>In other words: where is the alternative to Red Lobster?</p><p>That is not an insult to Red Lobster. It is an admission that Red Lobster understands a category Indianapolis has mostly left uncontested.</p><h2>The Missing Middle</h2><p>Sometimes you want seafood without making an event out of it. You want grilled shrimp, broiled fish, crab cakes, fried clams, scallops, coconut shrimp, chowder, baked potatoes, vegetables, and a basket of bread that ruins any responsible plan you had for the evening.</p><p>You want a menu broad enough for a family, familiar enough for cautious eaters, and affordable enough that nobody needs to call it an anniversary.</p><blockquote>Indianapolis has restaurants at both ends of the spectrum. What is missing is the middle.</blockquote><h2>Indianapolis Has Tried Before</h2><p>Joe&apos;s Crab Shack once came closest to filling that space. The chain entered Indianapolis in 1997 and eventually operated three local restaurants. The last one, on Dean Road at Lake Clearwater, closed in 2017. Joe&apos;s was loud, casual, family-friendly, and built around seafood platters rather than special occasions. It was not perfect, but it proved the category made sense here.</p><p>There were other attempts. Shells had a short run at Keystone at the Crossing and is now mostly forgotten. Sharkey&apos;s did not last long in Castleton either; Charleston&apos;s now operates at that East 82nd Street location. Indianapolis has seen versions of the restaurant I am describing. None became the dependable long-term alternative the city still needs.</p><h2>Sushi Does Not Solve This</h2><p>Sushi is seafood, but it is not a substitute for a casual American seafood restaurant any more than tacos are a substitute for a steakhouse. If I want grilled shrimp, rice, vegetables, and clam chowder, handing me a spicy tuna roll does not solve the problem.</p><p>I like sushi. This is not an attack on sushi. Sushi simply has nothing to do with the question.</p><h2>Neither Does the Seafood Boil</h2><p>A boil is its own experience. It usually means gloves, bibs, seasoning choices, and an amount of shell cracking that starts to feel like unpaid labor. Sometimes that is exactly what you want. Sometimes you just want a piece of grilled fish and two sides.</p><h2>Upscale Seafood Is Not Casual Seafood</h2><p>A $40 entrée is not the alternative to Red Lobster. It is an alternative to another $40 entrée. The missing restaurant is one you can visit on a Tuesday because you felt like eating seafood—not because somebody graduated, got promoted, retired, or survived another year of marriage.</p><h2>Why Has Nobody Claimed This Space?</h2><p>Seafood is difficult. It is perishable, expensive, sensitive to transportation, and much less forgiving than a freezer full of hamburger patties. Those realities explain the challenge. They do not erase the opportunity.</p><p>Keep the menu focused: dependable fish, grilled and fried preparations, good shrimp, a credible crab cake, chowder, combination platters, thoughtful sides, and a few non-seafood choices for the person who was outvoted.</p><p>People do not need a nautical theme park. They need seafood they trust at a price they can justify.</p><h2>The Verdict</h2><div className="verdictBox"><p>Indianapolis does not lack seafood. It lacks a casual seafood alternative. Sushi is not the answer. A seafood boil is not the same thing. An expensive dinner downtown does not fill the gap. Red Lobster should have competition, Indianapolis should have choices, and somebody should claim this space before we are forced to pretend another poke bowl solved the problem.</p></div></div></article><SiteFooter/></main>}
+export default function Page() {
+  return (
+    <main>
+      <SiteHeader />
+      <article className="articlePage opinionArticle">
+        <div className="articleHead">
+          <p className="eyebrow">
+            SAY IT, DON&apos;T SPRAY IT · ONE MAN&apos;S OPINION
+          </p>
+          <h1>Indianapolis Has a Seafood Problem</h1>
+          <p className="opinionDeck">
+            Where is the casual alternative to Red Lobster? And no, I am not
+            talking about sushi.
+          </p>
+          <div className="opinionByline">
+            <img src="/sean-profile-blue.png" alt="Sean Matthews" />
+            <div>
+              <span>OPINION BY</span>
+              <strong>Sean Matthews</strong>
+            </div>
+          </div>
+        </div>
+        <div className="articleBody">
+          <p>
+            Indianapolis has plenty of places where you can eat something that
+            once lived in water. We have sushi. We have seafood boils served in
+            plastic bags. We have fried fish sandwiches. We have upscale
+            restaurants where the sea bass arrives looking like it has its own
+            financial adviser.
+          </p>
+          <p>
+            What we do not seem to have is a strong, dependable, casual seafood
+            restaurant that fills the enormous space between fast food and a
+            special-occasion dinner.
+          </p>
+          <p>In other words: where is the alternative to Red Lobster?</p>
+          <p>
+            That is not an insult to Red Lobster. It is an admission that Red
+            Lobster understands a category Indianapolis has mostly left
+            uncontested.
+          </p>
+          <h2>The Missing Middle</h2>
+          <p>
+            Sometimes you want seafood without making an event out of it. You
+            want grilled shrimp, broiled fish, crab cakes, fried clams,
+            scallops, coconut shrimp, chowder, baked potatoes, vegetables, and a
+            basket of bread that ruins any responsible plan you had for the
+            evening.
+          </p>
+          <p>
+            You want a menu broad enough for a family, familiar enough for
+            cautious eaters, and affordable enough that nobody needs to call it
+            an anniversary.
+          </p>
+          <blockquote>
+            Indianapolis has restaurants at both ends of the spectrum. What is
+            missing is the middle.
+          </blockquote>
+          <h2>The Exception I Somehow Left Out</h2>
+          <p>
+            Before somebody throws a hushpuppy at me: yes, {" "}
+            <a
+              href="https://caplingersfreshcatch.com/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Caplinger&apos;s Fresh Catch
+            </a>{" "}
+            exists. Leaving it out of the original argument was a little like
+            complaining Indianapolis has no racetrack while driving past the
+            Speedway.
+          </p>
+          <p>
+            Caplinger&apos;s is the city&apos;s strongest answer for unfussy seafood:
+            fish sandwiches, catfish dinners, seafood platters, lobster rolls,
+            po&apos;boys, boils, and a real fresh-fish counter at its market
+            locations. It proves Indianapolis will support casual seafood done
+            seriously. It also strengthens the larger point: one homegrown
+            operation carrying this much of the category should have more
+            competition.
+          </p>
+          <h2>Indianapolis Has Tried Before</h2>
+          <p>
+            Joe&apos;s Crab Shack once came closest to filling that space. The
+            chain entered Indianapolis in 1997 and eventually operated three
+            local restaurants. The last one, on Dean Road at Lake Clearwater,
+            closed in 2017. Joe&apos;s was loud, casual, family-friendly, and
+            built around seafood platters rather than special occasions. It was
+            not perfect, but it proved the category made sense here.
+          </p>
+          <p>
+            There were other attempts. Shells had a short run at Keystone at the
+            Crossing and is now mostly forgotten. Sharkey&apos;s did not last
+            long in Castleton either; Charleston&apos;s now operates at that
+            East 82nd Street location. Indianapolis has seen versions of the
+            restaurant I am describing. None became the dependable long-term
+            alternative the city still needs.
+          </p>
+          <h2>Sushi Does Not Solve This</h2>
+          <p>
+            Sushi is seafood, but it is not a substitute for a casual American
+            seafood restaurant any more than tacos are a substitute for a
+            steakhouse. If I want grilled shrimp, rice, vegetables, and clam
+            chowder, handing me a spicy tuna roll does not solve the problem.
+          </p>
+          <p>
+            I like sushi. This is not an attack on sushi. Sushi simply has
+            nothing to do with the question.
+          </p>
+          <h2>Neither Does the Seafood Boil</h2>
+          <p>
+            A boil is its own experience. It usually means gloves, bibs,
+            seasoning choices, and an amount of shell cracking that starts to
+            feel like unpaid labor. Sometimes that is exactly what you want.
+            Sometimes you just want a piece of grilled fish and two sides.
+          </p>
+          <h2>Upscale Seafood Is Not Casual Seafood</h2>
+          <p>
+            A $40 entrée is not the alternative to Red Lobster. It is an
+            alternative to another $40 entrée. The missing restaurant is one you
+            can visit on a Tuesday because you felt like eating seafood—not
+            because somebody graduated, got promoted, retired, or survived
+            another year of marriage.
+          </p>
+          <h2>Why Has Nobody Claimed This Space?</h2>
+          <p>
+            Seafood is difficult. It is perishable, expensive, sensitive to
+            transportation, and much less forgiving than a freezer full of
+            hamburger patties. Those realities explain the challenge. They do
+            not erase the opportunity.
+          </p>
+          <p>
+            Keep the menu focused: dependable fish, grilled and fried
+            preparations, good shrimp, a credible crab cake, chowder,
+            combination platters, thoughtful sides, and a few non-seafood
+            choices for the person who was outvoted.
+          </p>
+          <p>
+            People do not need a nautical theme park. They need seafood they
+            trust at a price they can justify.
+          </p>
+          <h2>The Verdict</h2>
+          <div className="verdictBox">
+            <p>
+              Indianapolis does not lack seafood. It lacks a casual seafood
+              alternative. Sushi is not the answer. A seafood boil is not the
+              same thing. An expensive dinner downtown does not fill the gap.
+              Red Lobster should have competition, Indianapolis should have
+              choices, and somebody should claim this space before we are forced
+              to pretend another poke bowl solved the problem.
+            </p>
+          </div>
+        </div>
+      </article>
+      <SiteFooter />
+    </main>
+  );
+}
