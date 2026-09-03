@@ -76,7 +76,16 @@ export default function Home() {
     <section className="section" id="hoods">
       <p className="eyebrow">BROWSE BY NEIGHBORHOOD</p>
       <div className="heading"><h2>Start close. Drive farther if it earns it.</h2></div>
-      <div className="hoods">{['Downtown','Mass Ave','Fountain Square','Broad Ripple','Northside','Beyond Indy'].map(name=><a href="/neighborhoods" key={name}><strong>{name}</strong><span>Browse neighborhood index →</span></a>)}</div>
+      <div className="hoods">
+        {[
+          ["Downtown","St. Elmo · Commission Row · Hinata","#downtown"],
+          ["Mass Ave","Bakersfield · The Eagle · Bodhi","#mass-ave"],
+          ["Fountain Square","Bluebeard nearby · Geraldine’s · Kuma’s","#fountain-square"],
+          ["Broad Ripple","Ambrosia · Petite Chou · Canal Bistro","#broad-ripple"],
+          ["Northside","Delicia · Northside Social · Late Harvest","#northside"],
+          ["Beyond Indy","Food worth crossing the state line for","/out-of-sight-not-out-of-mind"]
+        ].map(([name,preview,destination])=><a href={destination.startsWith("#")?"/neighborhoods"+destination:destination} key={name}><strong>{name}</strong><small>{preview}</small><span>See the picks →</span></a>)}
+      </div>
     </section>
 
     <section className="sean" id="sean">
