@@ -82,3 +82,31 @@
   .restaurantPick,.restaurantPick:nth-child(2n),.restaurantPick:nth-child(n+3){min-height:0;border-right:0;border-bottom:2px solid var(--ink)}
   .restaurantPick:last-child{border-bottom:0}
 }
+
+/* Direct neighborhood and occasion destinations */
+.compactHero{padding-top:clamp(58px,7vw,92px);padding-bottom:clamp(50px,6vw,80px)}
+.compactHero h1{font-size:clamp(48px,7vw,86px)}
+.destinationGrid{display:grid;grid-template-columns:repeat(2,1fr);border:2px solid var(--ink)}
+.destinationGrid>a{min-height:280px;padding:34px;background:var(--paper);border-right:2px solid var(--ink);border-bottom:2px solid var(--ink);display:flex;flex-direction:column}
+.destinationGrid>a:nth-child(2n){border-right:0}.destinationGrid>a:nth-last-child(-n+2){border-bottom:0}
+.destinationGrid span{color:var(--red);font-size:12px;font-weight:950;letter-spacing:.11em}
+.destinationGrid h2{margin:28px 0 14px;font:700 38px/1.05 Georgia,serif}
+.destinationGrid p{color:var(--muted);font-size:16px;line-height:1.55}
+.destinationGrid b{margin-top:auto;font-size:13px;text-transform:uppercase;border-bottom:2px solid var(--red);width:max-content}
+.destinationGrid>a:hover{background:var(--gold)}
+.singleDestination{padding-top:clamp(50px,6vw,80px)}
+.destinationBack{margin-top:34px}.destinationBack a{font-size:14px;font-weight:950;text-transform:uppercase;border-bottom:2px solid var(--red)}
+.guidePickGrid{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}
+.guidePick{min-height:320px;padding:32px;border:2px solid var(--ink);background:var(--paper);display:flex;flex-direction:column}
+.guidePick.featuredGuidePick{background:#e3efff;box-shadow:inset 8px 0 0 var(--red)}
+.guidePick h2{margin:26px 0 12px;font:700 34px/1.05 Georgia,serif}
+.guidePick>p{color:var(--muted);font-size:16px;line-height:1.6}
+.guidePick>strong{font-size:14px;line-height:1.5}
+.guidePick>a{margin-top:auto;padding-top:28px;width:max-content;max-width:100%;font-size:13px;font-weight:950;text-transform:uppercase;border-bottom:2px solid var(--red)}
+.priceNote{display:block;margin-top:24px;padding:12px 15px;background:white;border-left:5px solid var(--red);max-width:760px;color:var(--ink);font-size:14px;line-height:1.5}
+@media(max-width:760px){
+  .destinationGrid,.guidePickGrid{grid-template-columns:1fr}
+  .destinationGrid>a,.destinationGrid>a:nth-child(2n),.destinationGrid>a:nth-last-child(-n+2){min-height:230px;border-right:0;border-bottom:2px solid var(--ink)}
+  .destinationGrid>a:last-child{border-bottom:0}
+  .guidePick{min-height:290px}
+}
