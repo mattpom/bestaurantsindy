@@ -34,7 +34,8 @@ export const neighborhoods:Neighborhood[]=[
     {name:"Delicia",label:"SEAN LOVES THIS ONE",best:"Best for: New Latin cooking and cocktails",note:"Latin American, Caribbean, and Spanish influences come together in one of College Avenue’s most distinctive dining rooms.",price:"$$$",href:"https://www.deliciaindy.com/"},
     {name:"The Northside Social",label:"NEIGHBORHOOD FAVORITE",best:"Best for: approachable food and a comfortable night out",note:"A polished but unpretentious College Avenue restaurant with seasonal American cooking, cocktails, and the feel of a dependable local favorite.",price:"$$$",href:"https://www.northsidesocial.com/"},
     {name:"Late Harvest Kitchen",label:"DESTINATION DINNER",best:"Best for: seasonal Midwestern cooking",note:"A northside destination with a seasonal menu, a warm dining room, and a reputation built on careful, ingredient-driven cooking.",price:"$$$",href:"https://www.lateharvestkitchen.com/"},
-    {name:"Provision",label:"MODERN UPSCALE",best:"Best for: a celebration north of downtown",note:"A modern American restaurant at Ironworks with an upscale dining room, rooftop setting, and a menu suited to special occasions.",price:"$$$$",href:"https://www.provision-restaurant.com/"}
+    {name:"Provision",label:"MODERN UPSCALE",best:"Best for: a celebration north of downtown",note:"A modern American restaurant at Ironworks with an upscale dining room, rooftop setting, and a menu suited to special occasions.",price:"$$$$",href:"https://www.provision-restaurant.com/"},
+    {name:"Caplinger’s Fresh Catch",label:"NEAR CASTLETON",best:"Best for: casual seafood without the chain-restaurant routine",note:"The Shadeland flagship combines a fresh-fish market with made-to-order fish sandwiches, catfish dinners, seafood platters, lobster rolls, and po’boys.",price:"$$",href:"https://caplingersfreshcatch.com/"}
   ]}
 ];
 
