@@ -1,4 +1,9 @@
+import Link from "next/link";
 import {SiteFooter,SiteHeader} from "../../components/SiteChrome";
-const guides=[["Taking out-of-town guests","A growing shortlist for showing off Indianapolis without defaulting to the obvious answer."],["Date night","Food good enough to justify the atmosphere—and atmosphere that does not drown out dinner."],["Lunch under $20","Real lunch, useful prices, and no financial-planning session afterward."],["Worth the drive","The standard is simple: the meal must justify crossing town."]];
-export const metadata={title:"Indianapolis Restaurant Guides | BestaurantsIndy"};
-export default function Guides(){return <main><SiteHeader/><section className="pageHero"><p className="eyebrow">DECIDE FASTER</p><h1>Restaurant guides built around real decisions.</h1><p>No forty-place lists assembled for search traffic. Each guide stays unpublished until it contains enough verified recommendations to be useful.</p></section><section className="contentPage"><div className="guideCards">{guides.map(([t,p],i)=><article key={t}><span>0{i+1}</span><h2>{t}</h2><p>{p}</p><b>IN DEVELOPMENT</b></article>)}</div></section><SiteFooter/></main>}
+import {diningGuides} from "./data";
+
+export const metadata={title:"Indianapolis Restaurant Guides | BestaurantsIndy",description:"Choose the occasion and go directly to a useful Indianapolis restaurant shortlist."};
+export default function Guides(){return <main><SiteHeader/>
+  <section className="pageHero compactHero"><p className="eyebrow">DECIDE FASTER</p><h1>What is the occasion?</h1><p>Choose the decision you are actually making. Each guide opens directly to a short, useful list.</p></section>
+  <section className="contentPage"><div className="destinationGrid">{diningGuides.map((g,i)=><Link href={"/guides/"+g.id} key={g.id}><span>0{i+1} · {g.eyebrow}</span><h2>{g.name}</h2><p>{g.intro}</p><b>Open the guide →</b></Link>)}</div></section>
+  <SiteFooter/></main>}
