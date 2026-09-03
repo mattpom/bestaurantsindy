@@ -45,3 +45,40 @@
 .sayHome{display:grid;grid-template-columns:.85fr 1.15fr;gap:clamp(36px,7vw,100px);align-items:center;background:var(--gold);border-top:2px solid var(--ink);border-bottom:2px solid var(--ink)}.sayIntro h2{font:700 clamp(42px,6vw,76px)/.98 Georgia,serif;letter-spacing:-.04em}.sayIntro>p:not(.eyebrow){max-width:570px;color:#26486f;font:19px/1.6 Georgia,serif}.sayFeature{min-height:430px;display:flex;align-items:flex-end;padding:clamp(30px,5vw,60px);background:var(--ink);color:white;border:2px solid var(--ink);box-shadow:12px 12px 0 var(--red)}.sayFeature span{color:var(--gold);font-size:10px;font-weight:950;letter-spacing:.16em}.sayFeature h3{max-width:650px;margin:18px 0;font:700 clamp(40px,5vw,68px)/.98 Georgia,serif}.sayFeature p{max-width:590px;color:#c9dbef;font:18px/1.55 Georgia,serif}.sayFeature b{font-size:11px;text-transform:uppercase;border-bottom:2px solid var(--red)}.opinionInline{background:white;border-bottom:2px solid var(--ink);scroll-margin-top:90px}.opinionInline>h2{max-width:900px;font:700 clamp(48px,7vw,88px)/.95 Georgia,serif;letter-spacing:-.05em}.opinionDeck{max-width:760px;color:var(--red);font:italic 26px/1.45 Georgia,serif}.opinionByline{display:flex;align-items:center;gap:14px;margin-top:30px}.opinionByline img{width:52px;height:52px;object-fit:cover;border-radius:50%;border:2px solid var(--ink);box-shadow:3px 3px 0 var(--gold)}.opinionByline span{display:block;margin-bottom:4px;color:var(--red);font-size:9px;font-weight:950;letter-spacing:.16em}.opinionByline strong{font:700 17px Georgia,serif}.opinionProse{width:min(760px,100%);margin-top:52px}.opinionProse p{font:19px/1.75 Georgia,serif;color:#344a60}.opinionProse h3{margin:48px 0 18px;font:700 38px/1.08 Georgia,serif}.opinionProse blockquote{margin:46px 0;padding:26px 30px;background:var(--ink);color:white;border-left:8px solid var(--red);font:700 28px/1.25 Georgia,serif}.opinionProse strong{color:var(--ink)}@media(max-width:1400px){header nav{gap:12px;font-size:9px}}@media(max-width:900px){.sayHome{grid-template-columns:1fr}.sayFeature{min-height:380px}}
 
 .opinionPage{background:white}.opinionPage .pageHero{background:linear-gradient(135deg,#a9cdfa 0%,#e8f2ff 66%,#fff 100%);border-bottom:8px solid var(--red)}.opinionGrid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}.opinionCard{display:flex;flex-direction:column;justify-content:space-between;min-height:350px;padding:34px;border:2px solid var(--ink);background:var(--ink);color:white}.opinionCard span{color:var(--gold);font-size:10px;font-weight:950;letter-spacing:.16em}.opinionCard h2{margin:22px 0;font:700 38px/1.05 Georgia,serif}.opinionCard p{color:#c9dbef;line-height:1.6}.opinionCard b{font-size:11px;text-transform:uppercase;border-bottom:2px solid var(--red)}.opinionArticle .articleHead{background:linear-gradient(135deg,#e8f2ff,#fff);border-bottom:8px solid var(--red)}.opinionArticle .articleBody>p:first-child{font-size:27px;color:var(--ink)}.opinionArticle .articleBody blockquote{margin:46px 0;padding:26px 30px;background:var(--ink);color:white;border-left:8px solid var(--red);font:700 28px/1.25 Georgia,serif}.opinionArticle .articleBody .verdictBox{margin-top:52px;padding:32px;background:var(--gold);border:2px solid var(--ink)}.opinionArticle .articleBody .verdictBox p{margin-bottom:0;color:var(--ink);font-weight:700}@media(max-width:900px){.opinionGrid{grid-template-columns:1fr}}
+
+
+/* Curated neighborhood guide */
+.hoods small{display:block;margin:12px 0 18px;color:#26486f;font:14px/1.45 Georgia,serif}
+.neighborhoodHero{padding-bottom:70px}
+.neighborhoodJump{display:flex;flex-wrap:wrap;gap:10px;margin-top:34px}
+.neighborhoodJump a{padding:11px 14px;background:white;border:2px solid var(--ink);font-size:10px;font-weight:950;letter-spacing:.09em;text-transform:uppercase;box-shadow:3px 3px 0 var(--gold)}
+.neighborhoodJump a:hover{background:var(--red);color:white}
+.neighborhoodGuide{padding-top:0;padding-bottom:0}
+.neighborhoodSection{padding:clamp(70px,8vw,110px) 0;border-bottom:2px solid var(--ink);scroll-margin-top:82px}
+.neighborhoodSectionHead{display:grid;grid-template-columns:1fr minmax(280px,520px);gap:12px 60px;align-items:end;margin-bottom:38px}
+.neighborhoodSectionHead .eyebrow{grid-column:1/-1;margin-bottom:8px}
+.neighborhoodSectionHead h2{margin:0;font:700 clamp(48px,7vw,82px)/.95 Georgia,serif;letter-spacing:-.045em}
+.neighborhoodSectionHead>p:last-child{margin:0;color:var(--muted);font:18px/1.55 Georgia,serif}
+.restaurantPickGrid{display:grid;grid-template-columns:repeat(2,1fr);border:2px solid var(--ink)}
+.restaurantPick{min-height:310px;padding:32px;background:var(--paper);border-right:2px solid var(--ink);border-bottom:2px solid var(--ink);display:flex;flex-direction:column}
+.restaurantPick:nth-child(2n){border-right:0}
+.restaurantPick:nth-child(n+3){border-bottom:0}
+.restaurantPick.featuredPick{background:#e3efff;box-shadow:inset 8px 0 0 var(--red)}
+.pickTop{display:flex;justify-content:space-between;gap:18px;align-items:start}
+.pickTop span{color:var(--red);font-size:9px;font-weight:950;letter-spacing:.13em}
+.pickTop b{padding:5px 7px;background:white;border:1px solid var(--ink);font-size:10px;letter-spacing:.08em}
+.restaurantPick h3{margin:26px 0 10px;font:700 34px/1.05 Georgia,serif}
+.restaurantPick>strong{font-size:12px;line-height:1.45}
+.restaurantPick>p{margin:14px 0 26px;color:var(--muted);line-height:1.6}
+.restaurantPick>a{margin-top:auto;width:max-content;max-width:100%;font-size:10px;font-weight:950;letter-spacing:.08em;text-transform:uppercase;border-bottom:2px solid var(--red)}
+.neighborhoodMethod{margin:clamp(70px,8vw,110px) 0;padding:clamp(34px,5vw,60px);background:var(--ink);color:white;border-left:10px solid var(--red)}
+.neighborhoodMethod h2{max-width:760px;font:700 clamp(36px,5vw,62px)/1 Georgia,serif;letter-spacing:-.035em}
+.neighborhoodMethod>p:last-child{max-width:800px;margin:0;color:#c9dbef;font:18px/1.65 Georgia,serif}
+@media(max-width:760px){
+  .neighborhoodJump{gap:7px}
+  .neighborhoodJump a{box-shadow:none}
+  .neighborhoodSectionHead{grid-template-columns:1fr}
+  .restaurantPickGrid{grid-template-columns:1fr}
+  .restaurantPick,.restaurantPick:nth-child(2n),.restaurantPick:nth-child(n+3){min-height:0;border-right:0;border-bottom:2px solid var(--ink)}
+  .restaurantPick:last-child{border-bottom:0}
+}
