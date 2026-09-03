@@ -1,26 +1,19 @@
 import Link from "next/link";
 
 const cards = [
-  ["Goose the Market","I Got Goosed and Liked It","Prosciutto, fresh mozzarella, basil, black pepper, and olive oil prove that a sandwich does not need excess.","ORDER THE GOOSE","goose","/reviews/i-got-goosed-and-liked-it"],
   ["Mama’s Korean Restaurant","The Best Part Is at the Bottom","Dolsot bibimbap arrives sizzling. Give the rice time against the stone before you mix it.","LET IT SIT","mama","/reviews/mamas-dolsot-bibimbap"],
   ["Broad Ripple","The Day Lox Took a Back Seat","The Tonya Harding stacks turkey, ham, bacon, Colby, and Swiss on a hot steamed bagel.","ORDER THIS","bagel","/reviews/bagel-field-note"],
+  ["Wings","No, You Can Be My Wingman","Korean fried chicken, Buffalo wings, and why soy garlic now holds Sean’s top spot.","NEW #1","wing","/reviews/wingman"],
 ];
 const guides = [
-  ["TAKE THE VISITORS","Where to take out-of-town guests without embarrassing Indianapolis."],
-  ["DATE NIGHT","Enough atmosphere—and food good enough to justify it."],
-  ["LUNCH UNDER $20","A proper meal without a financial planning session."],
-  ["WORTH THE DRIVE","Places good enough to make crossing town feel reasonable."],
+  ["TAKE THE VISITORS","Where to take out-of-town guests without embarrassing Indianapolis.","/guides/take-the-visitors"],
+  ["DATE NIGHT","Enough atmosphere—and food good enough to justify it.","/guides/date-night"],
+  ["LUNCH UNDER $20","A proper meal without a financial planning session.","/guides/lunch-under-20"],
+  ["WORTH THE DRIVE","Places good enough to make crossing town feel reasonable.","/guides/worth-the-drive"],
 ];
 
 export default function Home() {
   return <main>
-    <script type="application/ld+json" dangerouslySetInnerHTML={{__html:JSON.stringify({
-      "@context":"https://schema.org",
-      "@graph":[
-        {"@type":"WebSite","name":"BestaurantsIndy","url":"https://bestaurantsindy.com","description":"Indianapolis restaurant reviews, field notes, guides, and dining opinions."},
-        {"@type":"Organization","name":"BestaurantsIndy","url":"https://bestaurantsindy.com","logo":"https://bestaurantsindy.com/og.png"}
-      ]
-    })}} />
     <header>
       <a className="logo" href="#top">Bestaurants<span>Indy</span></a>
       <nav><a href="/reviews">Reviews</a><a href="/field-notes">Field Notes</a><a href="/guides">Guides</a><a href="/neighborhoods">Neighborhoods</a><a href="/out-of-sight-not-out-of-mind">Out of Sight, Not Out of Mind</a><a href="/say-it-dont-spray-it">Say It, Don&apos;t Spray It</a><a href="/about">About Sean</a></nav>
@@ -34,9 +27,9 @@ export default function Home() {
         <p className="deck">What to order. What it costs. Whether it is worth driving across town. No vague praise. No directory of every place with a fryer.</p>
         <div className="actions"><a className="button red" href="#latest">Find your next meal</a><a className="under" href="#sean">Meet Sean ↘</a></div>
       </div>
-      <div className="heroImg" style={{backgroundImage:"url(/goose-sandwich.jpg)",backgroundSize:"cover",backgroundPosition:"center",backgroundColor:"transparent"}} role="img" aria-label="The Goose sandwich with prosciutto and fresh mozzarella at Goose the Market">
+      <div className="heroImg" style={{backgroundImage:"url(/mamas-dolsot-bibimbap.jpg)",backgroundSize:"cover",backgroundPosition:"center 58%",backgroundColor:"transparent"}} role="img" aria-label="Dolsot bibimbap with vegetables, beef, and fried egg at Mama’s Korean Restaurant">
         <div className="stamp"><small>SEAN SAYS</small><b>GO.</b></div>
-        <div className="caption"><small>THE CURRENT OBSESSION</small><strong>The Goose at Goose the Market</strong></div>
+        <div className="caption"><small>THE CURRENT OBSESSION</small><strong>Mama&apos;s Dolsot Bibimbap</strong></div>
       </div>
     </section>
 
@@ -46,7 +39,7 @@ export default function Home() {
       <div className="heading"><div><p className="eyebrow">LATEST INTELLIGENCE</p><h2>Eat better this week.</h2></div><p>Three opinions. Zero committee meetings.</p></div>
       <div className="cards">
         {cards.map(([kicker,title,copy,verdict,img,href])=><article key={title}>
-          <div className={`cardImg ${img}`} style={img==="goose"?{backgroundImage:"url(/goose-sandwich.jpg)",backgroundSize:"cover",backgroundPosition:"center",backgroundColor:"transparent"}:img==="mama"?{backgroundImage:"url(/mamas-dolsot-bibimbap.jpg)",backgroundSize:"cover",backgroundPosition:"center 58%",backgroundColor:"transparent"}:undefined} role="img" aria-label={title}><span>{verdict}</span></div>
+          <div className={`cardImg ${img}`} style={img==="wing"?{backgroundImage:"url(/colonel-crying.webp)"}:img==="mama"?{backgroundImage:"url(/mamas-dolsot-bibimbap.jpg)",backgroundSize:"cover",backgroundPosition:"center 58%",backgroundColor:"transparent"}:undefined} role="img" aria-label={title}><span>{verdict}</span></div>
           <div className="cardCopy"><p className="kicker">{kicker}</p><h3>{title}</h3><p>{copy}</p><a href={href}>Read Sean&apos;s take →</a></div>
         </article>)}
       </div>
@@ -70,7 +63,7 @@ export default function Home() {
 
     <section className="guides section" id="guides">
       <div><p className="eyebrow gold">DECIDE FASTER</p><h2>Tell me the occasion.<br/>I&apos;ll tell you where to eat.</h2><p className="intro">Useful lists built around an actual decision—not forty restaurants thrown onto a page for search traffic.</p></div>
-        <div className="guideList">{guides.map(([title,copy],i)=><a href="/guides" key={title}><span>0{i+1}</span><div><strong>{title}</strong><p>{copy}</p></div><b>↗</b></a>)}</div>
+        <div className="guideList">{guides.map(([title,copy,href],i)=><a href={href} key={title}><span>0{i+1}</span><div><strong>{title}</strong><p>{copy}</p></div><b>↗</b></a>)}</div>
     </section>
 
     <section className="section" id="hoods">
@@ -78,13 +71,13 @@ export default function Home() {
       <div className="heading"><h2>Start close. Drive farther if it earns it.</h2></div>
       <div className="hoods">
         {[
-          ["Downtown","St. Elmo · Commission Row · Hinata","#downtown"],
-          ["Mass Ave","Bakersfield · The Eagle · Bodhi","#mass-ave"],
-          ["Fountain Square","Bluebeard nearby · Geraldine’s · Kuma’s","#fountain-square"],
-          ["Broad Ripple","Ambrosia · Petite Chou · Canal Bistro","#broad-ripple"],
-          ["Northside","Delicia · Northside Social · Late Harvest","#northside"],
+          ["Downtown","St. Elmo · Commission Row · Hinata","/neighborhoods/downtown"],
+          ["Mass Ave","Bakersfield · The Eagle · Bodhi","/neighborhoods/mass-ave"],
+          ["Fountain Square","Bluebeard nearby · Geraldine’s · Kuma’s","/neighborhoods/fountain-square"],
+          ["Broad Ripple","Ambrosia · Petite Chou · Canal Bistro","/neighborhoods/broad-ripple"],
+          ["Northside","Delicia · Northside Social · Late Harvest","/neighborhoods/northside"],
           ["Beyond Indy","Food worth crossing the state line for","/out-of-sight-not-out-of-mind"]
-        ].map(([name,preview,destination])=><a href={destination.startsWith("#")?"/neighborhoods"+destination:destination} key={name}><strong>{name}</strong><small>{preview}</small><span>See the picks →</span></a>)}
+        ].map(([name,preview,destination])=><a href={destination} key={name}><strong>{name}</strong><small>{preview}</small><span>See the picks →</span></a>)}
       </div>
     </section>
 
@@ -101,6 +94,6 @@ export default function Home() {
 
     <section className="dispatch section" id="dispatch"><p className="eyebrow">THE FIRST DISPATCHES</p><h2>BestaurantsIndy is just getting seated.</h2><p>The first full restaurant stories are coming next. Until then, follow the original recommendations and food photos on Instagram.</p><a className="button red" href="https://www.instagram.com/bestaurantsindy/" target="_blank" rel="noreferrer">Visit @bestaurantsindy</a></section>
 
-    <footer><Link className="logo" href="/">Bestaurants<span>Indy</span></Link><p>Indianapolis restaurants worth leaving the house for.</p><div><a href="/reviews">Reviews</a><a href="/field-notes">Field Notes</a><a href="/say-it-dont-spray-it">Say It, Don&apos;t Spray It</a><a href="/guides">Guides</a><a href="/about">About</a><a href="/editorial-policy">Editorial policy</a><a href="/privacy">Privacy</a><a href="/terms">Terms</a><a href="/affiliate-disclosure">Affiliate disclosure</a><a href="/cookie-policy">Cookie policy</a></div><small>© 2026 BestaurantsIndy · Owned and operated by Mattpom Digital Ventures LLC. Opinions are Sean&apos;s. Sponsored or hosted meals will be labeled plainly.</small></footer>
+    <footer><Link className="logo" href="/">Bestaurants<span>Indy</span></Link><p>Indianapolis restaurants worth leaving the house for.</p><div><a href="/reviews">Reviews</a><a href="/field-notes">Field Notes</a><a href="/say-it-dont-spray-it">Say It, Don&apos;t Spray It</a><a href="/guides">Guides</a><a href="/about">About</a><a href="/editorial-policy">Editorial policy</a></div><small>© 2026 BestaurantsIndy. Opinions are Sean&apos;s. Sponsored or hosted meals will be labeled plainly.</small></footer>
   </main>
 }
