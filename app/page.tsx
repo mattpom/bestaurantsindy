@@ -1,9 +1,9 @@
 import Link from "next/link";
 
 const cards = [
-  ["Fat Dan’s Deli","Sean Likes Wingies","Hickory-smoked, flash-fried wings, hand-cut fries, and a SoBro room made for watching the Cubs.","SMOKE. FRY. REPEAT.","fatdans","/reviews/sean-likes-wingies"],
   ["Mama’s Korean Restaurant","The Best Part Is at the Bottom","Dolsot bibimbap arrives sizzling. Give the rice time against the stone before you mix it.","LET IT SIT","mama","/reviews/mamas-dolsot-bibimbap"],
   ["Broad Ripple","The Day Lox Took a Back Seat","The Tonya Harding stacks turkey, ham, bacon, Colby, and Swiss on a hot steamed bagel.","ORDER THIS","bagel","/reviews/bagel-field-note"],
+  ["Wings","No, You Can Be My Wingman","Korean fried chicken, Buffalo wings, and why soy garlic now holds Sean’s top spot.","NEW #1","wing","/reviews/wingman"],
 ];
 const guides = [
   ["TAKE THE VISITORS","Where to take out-of-town guests without embarrassing Indianapolis.","/guides/take-the-visitors"],
@@ -28,10 +28,10 @@ export default function Home() {
         <p className="deck">What to order. What it costs. Whether it is worth driving across town. No vague praise. No directory of every place with a fryer.</p>
         <div className="actions"><a className="button red" href="#latest">Find your next meal</a><a className="under" href="#sean">Meet Sean ↘</a></div>
       </div>
-      <div className="heroImg" style={{backgroundImage:"url(/mamas-dolsot-bibimbap.jpg)",backgroundSize:"cover",backgroundPosition:"center 58%",backgroundColor:"transparent"}} role="img" aria-label="Dolsot bibimbap with vegetables, beef, and fried egg at Mama’s Korean Restaurant">
+      <a className="heroImg" href="/reviews/sean-likes-wingies" style={{backgroundImage:"url(/fat-dans-wingies.jpeg)",backgroundSize:"cover",backgroundPosition:"center 48%",backgroundColor:"transparent"}} role="img" aria-label="Smoked wings and hand-cut fries at Fat Dan’s Deli">
         <div className="stamp"><small>SEAN SAYS</small><b>GO.</b></div>
-        <div className="caption"><small>THE CURRENT OBSESSION</small><strong>Mama&apos;s Dolsot Bibimbap</strong></div>
-      </div>
+        <div className="caption"><small>THE CURRENT OBSESSION</small><strong>Fat Dan&apos;s Smoked Wings</strong></div>
+      </a>
     </section>
 
     <div className="ticker"><span>WHAT TO ORDER</span><b>•</b><span>WHAT TO SKIP</span><b>•</b><span>WHAT IT COSTS</span><b>•</b><span>WORTH THE DRIVE?</span></div>
