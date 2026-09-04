@@ -1,4 +1,4 @@
-export type RestaurantPick={name:string;label:string;best:string;note:string;price:string;href:string;linkLabel?:string};
+export type RestaurantPick={name:string;label:string;best:string;note:string;price:string;href:string;linkLabel?:string;image?:string;imageAlt?:string};
 export type Neighborhood={id:string;name:string;intro:string;anchor:string;restaurants:RestaurantPick[]};
 
 export const neighborhoods:Neighborhood[]=[
@@ -26,7 +26,7 @@ export const neighborhoods:Neighborhood[]=[
     {name:"Petite Chou",label:"FRENCH BISTRO",best:"Best for: brunch, crepes, and a relaxed date",note:"A French-inspired Broad Ripple staple that works from breakfast through dinner, with one of the neighborhood’s most inviting patios.",price:"$$",href:"https://www.petitechoubistro.com/"},
     {name:"Canal Bistro",label:"MEDITERRANEAN",best:"Best for: patio dining beside the canal",note:"Lebanese- and Egyptian-influenced food with a canal-side patio that gives the restaurant a genuine sense of place.",price:"$$",href:"https://www.canal-bistro.com/"},
     {name:"Fire by the Monon",label:"CASUAL LOCAL",best:"Best for: an easy neighborhood meal",note:"American comfort food near the Monon Trail, with grilled flavors and the kind of relaxed room that encourages repeat visits.",price:"$$",href:"https://firebythemonon.com/"},
-    {name:"Yats",label:"THE ORIGINAL",best:"Best for: fast, affordable Cajun and Creole comfort food",note:"The original Broad Ripple location built an Indianapolis favorite around rotating sauces over rice, spiced bread, and the essential half-and-half order.",price:"$",href:"https://www.yatscajuncreole.com/"},
+    {name:"Yats",label:"THE ORIGINAL",best:"Best for: a half-and-half plate of Cajun and Creole comfort food",note:"Order the red beans and rice beside the crawfish étouffée, both ladled over rice with Yats’ spiced bread on the side.",price:"$",href:"https://www.yatscajuncreole.com/",image:"/yats-red-beans-crawfish-etouffee.jpg",imageAlt:"Red beans and rice with crawfish étouffée and bread at Yats"},
     {name:"Bazbeaux Pizza",label:"BROAD RIPPLE CLASSIC",best:"Best for: inventive pizzas and a casual group meal",note:"A longstanding Westfield Boulevard favorite with specialty pizzas, plenty of build-your-own options, and a patio that fits the neighborhood.",price:"$$",href:"https://broadripple.bazbeaux.com/"},
     {name:"Fat Dan’s Deli",label:"CHICAGO COMFORT FOOD",best:"Best for: Italian beef, burgers, wings, and Chicago dogs",note:"A no-frills College Avenue deli and pub serving messy, satisfying Chicago-style food with cold beer and plenty of personality.",price:"$$",href:"https://www.fatdansdeli.com/"}
   ]},
@@ -44,7 +44,7 @@ export const neighborhoods:Neighborhood[]=[
 
 export function RestaurantGrid({restaurants}:{restaurants:RestaurantPick[]}){
   return <div className="restaurantPickGrid">{restaurants.map((r,i)=><article className={i===0?"restaurantPick featuredPick":"restaurantPick"} key={r.name}>
-    <div className="pickTop"><span>{r.label}</span><b>{r.price}</b></div><h3>{r.name}</h3><strong>{r.best}</strong><p>{r.note}</p>
+    {r.image&&<img className="restaurantPickImage" src={r.image} alt={r.imageAlt??""}/>}<div className="pickTop"><span>{r.label}</span><b>{r.price}</b></div><h3>{r.name}</h3><strong>{r.best}</strong><p>{r.note}</p>
     <a href={r.href} target={r.href.startsWith("http")?"_blank":undefined} rel={r.href.startsWith("http")?"noreferrer":undefined}>{r.linkLabel??"Visit restaurant website ↗"}</a>
   </article>)}</div>
 }
