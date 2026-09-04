@@ -1,4 +1,4 @@
-export type RestaurantPick={name:string;label:string;best:string;note:string;price:string;href:string};
+export type RestaurantPick={name:string;label:string;best:string;note:string;price:string;href:string;linkLabel?:string};
 export type Neighborhood={id:string;name:string;intro:string;anchor:string;restaurants:RestaurantPick[]};
 
 export const neighborhoods:Neighborhood[]=[
@@ -35,6 +35,8 @@ export const neighborhoods:Neighborhood[]=[
     {name:"The Northside Social",label:"NEIGHBORHOOD FAVORITE",best:"Best for: approachable food and a comfortable night out",note:"A polished but unpretentious College Avenue restaurant with seasonal American cooking, cocktails, and the feel of a dependable local favorite.",price:"$$$",href:"https://www.northsidesocial.com/"},
     {name:"Late Harvest Kitchen",label:"DESTINATION DINNER",best:"Best for: seasonal Midwestern cooking",note:"A northside destination with a seasonal menu, a warm dining room, and a reputation built on careful, ingredient-driven cooking.",price:"$$$",href:"https://www.lateharvestkitchen.com/"},
     {name:"Provision",label:"MODERN UPSCALE",best:"Best for: a celebration north of downtown",note:"A modern American restaurant at Ironworks with an upscale dining room, rooftop setting, and a menu suited to special occasions.",price:"$$$$",href:"https://www.provision-restaurant.com/"},
+    {name:"Ramen Ray",label:"RAMEN · SEAN REVIEWED",best:"Best for: Spicy Miso ramen with real depth and heat",note:"A focused northeast-side ramen shop where miso-based pork broth, chili heat, chashu, a marinated egg, noodles, and vegetables make the Spicy Miso the right first order.",price:"$$",href:"/reviews/ramen-field-note",linkLabel:"Read Sean’s review →"},
+    {name:"Chao Vietnamese Street Food",label:"FISHERS · VIETNAMESE",best:"Best for: the bánh mì and pho lunch special",note:"The lunch combination pairs a full-size bánh mì with a small bowl of beef pho—the Vietnamese answer to soup and a sandwich.",price:"$",href:"https://chaovietstreetfood.com/"},
     {name:"Caplinger’s Fresh Catch",label:"NEAR CASTLETON",best:"Best for: casual seafood without the chain-restaurant routine",note:"The Shadeland flagship combines a fresh-fish market with made-to-order fish sandwiches, catfish dinners, seafood platters, lobster rolls, and po’boys.",price:"$$",href:"https://caplingersfreshcatch.com/"}
   ]}
 ];
@@ -42,6 +44,6 @@ export const neighborhoods:Neighborhood[]=[
 export function RestaurantGrid({restaurants}:{restaurants:RestaurantPick[]}){
   return <div className="restaurantPickGrid">{restaurants.map((r,i)=><article className={i===0?"restaurantPick featuredPick":"restaurantPick"} key={r.name}>
     <div className="pickTop"><span>{r.label}</span><b>{r.price}</b></div><h3>{r.name}</h3><strong>{r.best}</strong><p>{r.note}</p>
-    <a href={r.href} target="_blank" rel="noreferrer">Visit restaurant website ↗</a>
+    <a href={r.href} target={r.href.startsWith("http")?"_blank":undefined} rel={r.href.startsWith("http")?"noreferrer":undefined}>{r.linkLabel??"Visit restaurant website ↗"}</a>
   </article>)}</div>
 }
