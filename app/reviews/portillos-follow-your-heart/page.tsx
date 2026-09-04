@@ -8,6 +8,13 @@ export const metadata = {
     description: "The correct Portillo’s order: Italian beef wet, a Chicago dog, and a chocolate cake shake.",
     type: "article",
     url: "/reviews/portillos-follow-your-heart",
+    images: ["/portillos-italian-beef.jpg"],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "I Don’t Care That It’s a Chain. Sometimes You Have to Follow Your Heart",
+    description: "The correct Portillo’s order: Italian beef wet, a Chicago dog, and a chocolate cake shake.",
+    images: ["/portillos-italian-beef.jpg"],
   },
 };
 
@@ -21,6 +28,7 @@ export default function Page() {
           <h1>I Don’t Care That It’s a Chain. Sometimes You Have to Follow Your Heart</h1>
           <p className="articleVerdict">SEAN’S VERDICT: GET THE BEEF WET</p>
         </div>
+        <img className="articleImage" src="/portillos-italian-beef.jpg" alt="Portillo’s Italian beef sandwich ordered wet with peppers" />
         <div className="articleBody">
           <p className="leadArticle">
             Food people are supposed to be suspicious of chains. We are expected to seek out the hidden storefront, admire the handwritten menu, and act as if a restaurant becomes less delicious every time it opens another location. Sometimes that instinct protects us from a bad meal. Sometimes it just gets in the way of lunch.
