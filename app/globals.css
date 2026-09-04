@@ -63,7 +63,7 @@
 .restaurantPick{min-height:310px;padding:32px;background:var(--paper);border-right:2px solid var(--ink);border-bottom:2px solid var(--ink);display:flex;flex-direction:column}
 .restaurantPick:nth-child(2n){border-right:0}
 .restaurantPick:nth-child(n+3){border-bottom:0}
-.restaurantPickImage{width:calc(100% + 64px);height:230px;margin:-32px -32px 28px;object-fit:cover;border-bottom:2px solid var(--ink)}
+.restaurantPickImage{display:block;width:calc(100% + 64px);height:auto;aspect-ratio:3/2;margin:-32px -32px 28px;object-fit:contain;background:#111;border-bottom:2px solid var(--ink)}
 .restaurantPick.featuredPick{background:#e3efff;box-shadow:inset 8px 0 0 var(--red)}
 .pickTop{display:flex;justify-content:space-between;gap:18px;align-items:start}
 .pickTop span{color:var(--red);font-size:9px;font-weight:950;letter-spacing:.13em}
