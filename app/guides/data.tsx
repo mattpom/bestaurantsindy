@@ -23,7 +23,7 @@ export const diningGuides:DiningGuide[]=[
     {name:"Broad Ripple Brewpub",label:"BROAD RIPPLE",why:"Pub food, vegetarian options, and several full meals comfortably below $20.",order:"Vegan tenderloin — listed at $13.25.",price:"$",href:"https://www.broadripplebrewpub.com/"},
     {name:"Broad Ripple Tavern",label:"BROAD RIPPLE",why:"Straightforward sandwiches and baskets at prices that still leave room beneath the cap.",order:"Pork tenderloin — listed at $12.",price:"$",href:"https://www.broadrippletavern.com/"}
   ]},
-  {id:"worth-the-drive",name:"Worth the Drive",eyebrow:"CROSS TOWN FOR A REASON",intro:"The meal has to justify the mileage. These are destinations, not places added merely to make the list longer.",picks:[
+  {id:"worth-the-drive",name:"Worth the Drive",eyebrow:"INDIANAPOLIS AREA · CROSS TOWN FOR A REASON",intro:"Indianapolis and nearby metro destinations where the meal justifies the mileage. Out-of-state restaurants belong in Out of Sight, Not Out of Mind—not here.",picks:[
     {name:"Late Harvest Kitchen",label:"NORTHSIDE",why:"Seasonal Midwestern cooking and a warm dining room that reward making an actual reservation.",order:"Follow the seasonal menu.",price:"$$$",href:"https://www.lateharvestkitchen.com/"},
     {name:"Provision",label:"IRONWORKS",why:"An upscale northside destination suited to celebrations and nights when downtown is not the plan.",order:"Build the evening around a main course and rooftop drink.",price:"$$$$",href:"https://www.provision-restaurant.com/"},
     {name:"Mama’s Korean Restaurant",label:"LAWRENCE",why:"The dolsot bibimbap arrives sizzling, and the crisp rice at the bottom is worth waiting for.",order:"Dolsot bibimbap—let it sit before mixing.",price:"$$",href:"/reviews/mamas-dolsot-bibimbap"},
