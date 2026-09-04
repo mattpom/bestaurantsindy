@@ -10,13 +10,13 @@ export type ReviewEntry = {
 
 export const reviewEntries: ReviewEntry[] = [
   {
-    title: "I Got Goosed and Liked It",
-    category: "Goose the Market",
-    verdict: "Order the Goose",
-    image: "/goose-sandwich.jpg",
-    href: "/reviews/i-got-goosed-and-liked-it",
-    summary: "Prosciutto, fresh mozzarella, basil, black pepper, and olive oil prove a sandwich does not need excess when every ingredient earns its place.",
-    publishedAt: "2026-09-01T18:30:00-04:00",
+    title: "Sean Likes Wingies",
+    category: "Wings",
+    verdict: "Smoke First. Fry Second.",
+    image: "/fat-dans-wingies.jpeg",
+    href: "/reviews/sean-likes-wingies",
+    summary: "Fat Dan’s hickory-smokes its jumbo wings, flash-fries them for a crisp finish, and serves them beside hand-cut fries in a SoBro pub made for watching the Cubs.",
+    publishedAt: "2026-09-03T22:15:00-04:00",
   },
   {
     title: "The Best Part Is at the Bottom",

@@ -1,9 +1,9 @@
 import Link from "next/link";
 
 const cards = [
+  ["Fat Dan’s Deli","Sean Likes Wingies","Hickory-smoked, flash-fried wings, hand-cut fries, and a SoBro room made for watching the Cubs.","SMOKE. FRY. REPEAT.","fatdans","/reviews/sean-likes-wingies"],
   ["Mama’s Korean Restaurant","The Best Part Is at the Bottom","Dolsot bibimbap arrives sizzling. Give the rice time against the stone before you mix it.","LET IT SIT","mama","/reviews/mamas-dolsot-bibimbap"],
   ["Broad Ripple","The Day Lox Took a Back Seat","The Tonya Harding stacks turkey, ham, bacon, Colby, and Swiss on a hot steamed bagel.","ORDER THIS","bagel","/reviews/bagel-field-note"],
-  ["Wings","No, You Can Be My Wingman","Korean fried chicken, Buffalo wings, and why soy garlic now holds Sean’s top spot.","NEW #1","wing","/reviews/wingman"],
 ];
 const guides = [
   ["TAKE THE VISITORS","Where to take out-of-town guests without embarrassing Indianapolis.","/guides/take-the-visitors"],
@@ -40,7 +40,7 @@ export default function Home() {
       <div className="heading"><div><p className="eyebrow">LATEST INTELLIGENCE</p><h2>Eat better this week.</h2></div><p>Three opinions. Zero committee meetings.</p></div>
       <div className="cards">
         {cards.map(([kicker,title,copy,verdict,img,href])=><article key={title}>
-          <div className={`cardImg ${img}`} style={img==="wing"?{backgroundImage:"url(/colonel-crying.webp)"}:img==="mama"?{backgroundImage:"url(/mamas-dolsot-bibimbap.jpg)",backgroundSize:"cover",backgroundPosition:"center 58%",backgroundColor:"transparent"}:undefined} role="img" aria-label={title}><span>{verdict}</span></div>
+          <div className={`cardImg ${img}`} style={img==="fatdans"?{backgroundImage:"url(/fat-dans-wingies.jpeg)",backgroundSize:"cover",backgroundPosition:"center 47%",backgroundColor:"transparent"}:img==="wing"?{backgroundImage:"url(/colonel-crying.webp)"}:img==="mama"?{backgroundImage:"url(/mamas-dolsot-bibimbap.jpg)",backgroundSize:"cover",backgroundPosition:"center 58%",backgroundColor:"transparent"}:undefined} role="img" aria-label={title}><span>{verdict}</span></div>
           <div className="cardCopy"><p className="kicker">{kicker}</p><h3>{title}</h3><p>{copy}</p><a href={href}>Read Sean&apos;s take →</a></div>
         </article>)}
       </div>
