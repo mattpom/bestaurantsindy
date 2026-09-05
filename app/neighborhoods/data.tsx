@@ -1,4 +1,4 @@
-export type RestaurantPick={name:string;label:string;best:string;note:string;price:string;href:string;linkLabel?:string;image?:string;imageAlt?:string};
+export type RestaurantPick={name:string;label:string;best:string;note:string;price:string;href:string;linkLabel?:string};
 export type Neighborhood={id:string;name:string;intro:string;anchor:string;restaurants:RestaurantPick[]};
 
 export const neighborhoods:Neighborhood[]=[
@@ -26,7 +26,7 @@ export const neighborhoods:Neighborhood[]=[
     {name:"Petite Chou",label:"FRENCH BISTRO",best:"Best for: brunch, crepes, and a relaxed date",note:"A French-inspired Broad Ripple staple that works from breakfast through dinner, with one of the neighborhood’s most inviting patios.",price:"$$",href:"https://www.petitechoubistro.com/"},
     {name:"Canal Bistro",label:"MEDITERRANEAN",best:"Best for: patio dining beside the canal",note:"Lebanese- and Egyptian-influenced food with a canal-side patio that gives the restaurant a genuine sense of place.",price:"$$",href:"https://www.canal-bistro.com/"},
     {name:"Fire by the Monon",label:"CASUAL LOCAL",best:"Best for: an easy neighborhood meal",note:"American comfort food near the Monon Trail, with grilled flavors and the kind of relaxed room that encourages repeat visits.",price:"$$",href:"https://firebythemonon.com/"},
-    {name:"Yats",label:"THE ORIGINAL",best:"Best for: a half-and-half plate of Cajun and Creole comfort food",note:"Order the red beans and rice beside the crawfish étouffée, both ladled over rice with Yats’ spiced bread on the side.",price:"$",href:"https://www.yatscajuncreole.com/",image:"/yats-red-beans-crawfish-etouffee.jpg",imageAlt:"Red beans and rice with crawfish étouffée and bread at Yats"},
+    {name:"Yats",label:"THE ORIGINAL · SEAN REVIEWED",best:"Best for: a half-and-half plate of Cajun and Creole comfort food",note:"Order the red beans and rice beside the crawfish étouffée, both ladled over rice with Yats’ spiced bread on the side.",price:"$",href:"/reviews/yats-half-and-half",linkLabel:"Read Sean’s review →"},
     {name:"Bazbeaux Pizza",label:"BROAD RIPPLE CLASSIC",best:"Best for: inventive pizzas and a casual group meal",note:"A longstanding Westfield Boulevard favorite with specialty pizzas, plenty of build-your-own options, and a patio that fits the neighborhood.",price:"$$",href:"https://broadripple.bazbeaux.com/"},
     {name:"Fat Dan’s Deli",label:"CHICAGO COMFORT FOOD",best:"Best for: Italian beef, burgers, wings, and Chicago dogs",note:"A no-frills College Avenue deli and pub serving messy, satisfying Chicago-style food with cold beer and plenty of personality.",price:"$$",href:"https://www.fatdansdeli.com/"}
   ]},
@@ -38,15 +38,14 @@ export const neighborhoods:Neighborhood[]=[
     {name:"Provision",label:"MODERN UPSCALE",best:"Best for: a celebration north of downtown",note:"A modern American restaurant at Ironworks with an upscale dining room, rooftop setting, and a menu suited to special occasions.",price:"$$$$",href:"https://www.provision-restaurant.com/"},
     {name:"Ramen Ray",label:"RAMEN · SEAN REVIEWED",best:"Best for: Spicy Miso ramen with real depth and heat",note:"A focused northeast-side ramen shop where miso-based pork broth, chili heat, chashu, a marinated egg, noodles, and vegetables make the Spicy Miso the right first order.",price:"$$",href:"/reviews/ramen-field-note",linkLabel:"Read Sean’s review →"},
     {name:"Chao Vietnamese Street Food",label:"FISHERS · VIETNAMESE",best:"Best for: the bánh mì and pho lunch special",note:"The lunch combination pairs a full-size bánh mì with a small bowl of beef pho—the Vietnamese answer to soup and a sandwich.",price:"$",href:"https://chaovietstreetfood.com/"},
-    {name:"Portillo’s",label:"FISHERS · CHICAGO STREET FOOD",best:"Best for: Italian beef ordered wet",note:"Yes, it is a chain. Follow your heart anyway: get the Italian beef wet, add a Chicago dog, and finish with the chocolate cake shake.",price:"$$",href:"/reviews/portillos-follow-your-heart",linkLabel:"Read Sean’s review →",image:"/portillos-italian-beef.jpg",imageAlt:"Portillo’s Italian beef sandwich ordered wet with peppers"},
-    
+    {name:"Portillo’s",label:"FISHERS · SEAN REVIEWED",best:"Best for: Italian beef ordered wet",note:"Yes, it is a chain. Follow your heart anyway: get the Italian beef wet, add a Chicago dog, and finish with the chocolate cake shake.",price:"$",href:"/reviews/portillos-follow-your-heart",linkLabel:"Read Sean’s review →"},
     {name:"Caplinger’s Fresh Catch",label:"NEAR CASTLETON",best:"Best for: casual seafood without the chain-restaurant routine",note:"The Shadeland flagship combines a fresh-fish market with made-to-order fish sandwiches, catfish dinners, seafood platters, lobster rolls, and po’boys.",price:"$$",href:"https://caplingersfreshcatch.com/"}
   ]}
 ];
 
 export function RestaurantGrid({restaurants}:{restaurants:RestaurantPick[]}){
   return <div className="restaurantPickGrid">{restaurants.map((r,i)=><article className={i===0?"restaurantPick featuredPick":"restaurantPick"} key={r.name}>
-    {r.image&&<img className="restaurantPickImage" src={r.image} alt={r.imageAlt??""}/>}<div className="pickTop"><span>{r.label}</span><b>{r.price}</b></div><h3>{r.name}</h3><strong>{r.best}</strong><p>{r.note}</p>
+    <div className="pickTop"><span>{r.label}</span><b>{r.price}</b></div><h3>{r.name}</h3><strong>{r.best}</strong><p>{r.note}</p>
     <a href={r.href} target={r.href.startsWith("http")?"_blank":undefined} rel={r.href.startsWith("http")?"noreferrer":undefined}>{r.linkLabel??"Visit restaurant website ↗"}</a>
   </article>)}</div>
 }
