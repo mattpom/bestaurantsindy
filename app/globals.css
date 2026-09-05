@@ -63,7 +63,6 @@
 .restaurantPick{min-height:310px;padding:32px;background:var(--paper);border-right:2px solid var(--ink);border-bottom:2px solid var(--ink);display:flex;flex-direction:column}
 .restaurantPick:nth-child(2n){border-right:0}
 .restaurantPick:nth-child(n+3){border-bottom:0}
-.restaurantPickImage{display:block;width:calc(100% + 64px);max-width:none;height:auto;aspect-ratio:3/2;margin:-32px -32px 28px;object-fit:cover;background:#111;border-bottom:2px solid var(--ink)}
 .restaurantPick.featuredPick{background:#e3efff;box-shadow:inset 8px 0 0 var(--red)}
 .pickTop{display:flex;justify-content:space-between;gap:18px;align-items:start}
 .pickTop span{color:var(--red);font-size:9px;font-weight:950;letter-spacing:.13em}
@@ -111,3 +110,26 @@
   .destinationGrid>a:last-child{border-bottom:0}
   .guidePick{min-height:290px}
 }
+
+/* Photo Buffet: one deliberate home for Sean's real, unstaged food photography. */
+.photoBuffetPage{background:#fff}
+.photoBuffetHero{background:linear-gradient(135deg,#071a33 0%,#14385f 72%,#1261d5 100%);color:white;border-bottom:8px solid var(--gold)}
+.photoBuffetHero .eyebrow{color:var(--gold)}
+.photoBuffetHero>p:last-child{max-width:760px;color:#d9eaff}
+.photoBuffetSection{padding-top:54px}
+.photoBuffetNote{display:grid;grid-template-columns:minmax(210px,.45fr) 1.55fr;gap:24px 48px;margin-bottom:54px;padding:28px 32px;background:var(--gold);border:2px solid var(--ink);box-shadow:8px 8px 0 var(--ink)}
+.photoBuffetNote strong{font:700 25px/1.15 Georgia,serif}
+.photoBuffetNote p{margin:0;color:#183653;font:17px/1.6 Georgia,serif}
+.photoBuffetGrid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.photoBuffetCard{display:flex;flex-direction:column;background:var(--paper);border:2px solid var(--ink);transition:.15s}
+.photoBuffetCard:hover{transform:translateY(-4px);box-shadow:7px 7px 0 var(--gold)}
+.photoBuffetCard img{display:block;width:100%;aspect-ratio:4/3;object-fit:cover;border-bottom:2px solid var(--ink)}
+.photoBuffetCard>div{display:flex;flex:1;flex-direction:column;padding:24px}
+.photoBuffetCard span{color:var(--red);font-size:9px;font-weight:950;letter-spacing:.14em}
+.photoBuffetCard h2{margin:16px 0 9px;font:700 31px/1.06 Georgia,serif}
+.photoBuffetCard p{margin-bottom:24px;color:var(--muted);font:17px/1.45 Georgia,serif}
+.photoBuffetCard b{margin-top:auto;width:max-content;font-size:10px;letter-spacing:.08em;text-transform:uppercase;border-bottom:2px solid var(--red)}
+.photoBuffetLead{grid-column:span 2}
+.photoBuffetLead img{aspect-ratio:16/9}
+@media(max-width:900px){.photoBuffetGrid{grid-template-columns:repeat(2,1fr)}.photoBuffetLead{grid-column:span 2}}
+@media(max-width:620px){.photoBuffetNote{grid-template-columns:1fr}.photoBuffetGrid{grid-template-columns:1fr}.photoBuffetLead{grid-column:auto}.photoBuffetLead img,.photoBuffetCard img{aspect-ratio:4/3}}
