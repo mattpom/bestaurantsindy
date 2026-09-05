@@ -60,7 +60,7 @@ export default function Home() {
 
     <section className="sayHome section" id="say-it-dont-spray-it">
       <div className="sayIntro"><p className="eyebrow">SAY IT, DON&apos;T SPRAY IT</p><h2>Strong opinions. Minimal table cleanup.</h2><p>Sean on Indianapolis food culture, restaurant trends, pricing, service, and the dining ideas this city is still missing.</p><a className="button red" href="/say-it-dont-spray-it">Read the Opinions</a></div>
-      <a className="sayFeature" href="/say-it-dont-spray-it/indianapolis-seafood-problem"><div><span>THE FIRST OPINION</span><h3>Indianapolis Has a Seafood Problem</h3><p>Where is the casual alternative to Red Lobster? And no, sushi does not answer the question.</p><b>Read Sean&apos;s take →</b></div></a>
+      <a className="sayFeature" href="/say-it-dont-spray-it/portillos-follow-your-heart"><div><span>THE LATEST OPINION · CHAIN RESTAURANTS</span><h3>I Don’t Care That It’s a Chain</h3><p>Good food does not deserve automatic dismissal just because another location exists. Sometimes you have to follow your heart.</p><b>Read Sean&apos;s take →</b></div></a>
     </section>
 
     <section className="guides section" id="guides">
