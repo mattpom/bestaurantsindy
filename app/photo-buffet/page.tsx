@@ -13,7 +13,7 @@ export const metadata = {
 };
 
 const photos = [
-  {restaurant:"Portillo’s",dish:"Italian beef — get it wet",image:"/portillos-italian-beef.jpg",href:"/reviews/portillos-follow-your-heart",location:"FISHERS · CHICAGO STREET FOOD"},
+  {restaurant:"Portillo’s",dish:"Italian beef — get it wet",image:"/portillos-italian-beef.jpg",href:"/say-it-dont-spray-it/portillos-follow-your-heart",location:"FISHERS · CHICAGO STREET FOOD"},
   {restaurant:"Yats",dish:"Red beans and rice with crawfish étouffée",image:"/yats-red-beans-crawfish-etouffee.jpg",href:"/reviews/yats-half-and-half",location:"BROAD RIPPLE · CAJUN & CREOLE"},
   {restaurant:"Mama’s Korean Restaurant",dish:"Dolsot bibimbap — let the rice sit",image:"/mamas-dolsot-bibimbap.jpg",href:"/reviews/mamas-dolsot-bibimbap",location:"INDIANAPOLIS · KOREAN"},
   {restaurant:"Goose the Market",dish:"The Goose sandwich",image:"/goose-sandwich.jpg",href:"/reviews/i-got-goosed-and-liked-it",location:"FALL CREEK PLACE · MARKET"},
