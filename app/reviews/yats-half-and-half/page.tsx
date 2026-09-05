@@ -5,7 +5,7 @@ export const metadata = {
   description: "At Yats, red beans and rice beside crawfish étouffée turns one inexpensive plate into the right introduction.",
   openGraph: {
     title: "Half and Half Is the Whole Point",
-    description: "Red beans and rice, crawfish étouffée, and Yats’ essential spiced bread.",
+    description: "Red beans and rice, crawfish étouffée, and Yats’ famous Cajun toast.",
     type: "article",
     url: "/reviews/yats-half-and-half",
     images: ["/yats-red-beans-crawfish-etouffee.jpg"],
@@ -26,7 +26,7 @@ export default function Page() {
       verdict="SEAN’S VERDICT: ORDER HALF AND HALF"
       image="/yats-red-beans-crawfish-etouffee.jpg"
       noteTitle="Sean’s order"
-      note="Red beans and rice beside crawfish étouffée, both served over rice with Yats’ spiced bread."
+      note="Red beans and rice beside crawfish étouffée, both served over rice with Yats’ famous Cajun toast."
     >
       <p className="leadArticle">
         The smartest order at Yats is not choosing one thing. It is admitting that two sauces over rice belong on the same plate and ordering half and half.
@@ -42,7 +42,7 @@ export default function Page() {
 
       <h2>Do not ignore the bread</h2>
       <p>
-        The bread can look like an afterthought sitting at the top of the plate. It is not. Yats coats it with butter and seasoning, giving it enough spice and richness to stand beside the sauces. Use it to clear the plate.
+        The bread can look like an afterthought sitting at the top of the plate. It is not. Yats’ Cajun toast is coated with butter and seasoning, giving it enough spice and richness to stand beside the sauces. Use it to clear the plate.
       </p>
 
       <h2>Why Yats works</h2>
