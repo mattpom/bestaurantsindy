@@ -15,7 +15,7 @@ export const reviewEntries: ReviewEntry[] = [
     verdict: "Order Half and Half",
     image: "/yats-red-beans-crawfish-etouffee.jpg",
     href: "/reviews/yats-half-and-half",
-    summary: "Red beans and rice beside crawfish étouffée, both served over rice with Yats’ spiced bread. Choosing two is the correct strategy.",
+    summary: "Red beans and rice beside crawfish étouffée, both served over rice with Yats’ famous Cajun toast. Choosing two is the correct strategy.",
     publishedAt: "2026-09-05T20:00:00-04:00",
   },
   {
