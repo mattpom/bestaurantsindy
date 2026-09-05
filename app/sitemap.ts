@@ -16,7 +16,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${base}/affiliate-disclosure`, changeFrequency: "yearly", priority: 0.3 },
     { url: `${base}/cookie-policy`, changeFrequency: "yearly", priority: 0.3 },
     { url: `${base}/reviews/mamas-dolsot-bibimbap`, changeFrequency: "monthly", priority: 0.8 },
-    { url: `${base}/reviews/portillos-follow-your-heart`, changeFrequency: "monthly", priority: 0.8 },
     { url: `${base}/reviews/yats-half-and-half`, changeFrequency: "monthly", priority: 0.8 },
     { url: `${base}/reviews/sean-likes-wingies`, changeFrequency: "monthly", priority: 0.8 },
     { url: `${base}/reviews/i-got-goosed-and-liked-it`, changeFrequency: "monthly", priority: 0.8 },
@@ -29,5 +28,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${base}/out-of-sight-not-out-of-mind/princes-hot-chicken`, changeFrequency: "monthly", priority: 0.8 },
     { url: `${base}/say-it-dont-spray-it`, changeFrequency: "monthly", priority: 0.8 },
     { url: `${base}/say-it-dont-spray-it/indianapolis-seafood-problem`, changeFrequency: "monthly", priority: 0.8 },
+    { url: `${base}/say-it-dont-spray-it/portillos-follow-your-heart`, changeFrequency: "monthly", priority: 0.8 },
   ];
 }
