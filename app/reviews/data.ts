@@ -10,6 +10,15 @@ export type ReviewEntry = {
 
 export const reviewEntries: ReviewEntry[] = [
   {
+    title: "Half and Half Is the Whole Point",
+    category: "Yats",
+    verdict: "Order Half and Half",
+    image: "/yats-red-beans-crawfish-etouffee.jpg",
+    href: "/reviews/yats-half-and-half",
+    summary: "Red beans and rice beside crawfish étouffée, both served over rice with Yats’ spiced bread. Choosing two is the correct strategy.",
+    publishedAt: "2026-09-05T20:00:00-04:00",
+  },
+  {
     title: "I Don’t Care That It’s a Chain. Sometimes You Have to Follow Your Heart",
     category: "Portillo’s",
     verdict: "Get the Beef Wet",
