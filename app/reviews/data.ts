@@ -19,15 +19,6 @@ export const reviewEntries: ReviewEntry[] = [
     publishedAt: "2026-09-05T20:00:00-04:00",
   },
   {
-    title: "I Don’t Care That It’s a Chain. Sometimes You Have to Follow Your Heart",
-    category: "Portillo’s",
-    verdict: "Get the Beef Wet",
-    image: "/portillos-italian-beef.jpg",
-    href: "/reviews/portillos-follow-your-heart",
-    summary: "Italian beef dipped wet, a fully dressed Chicago dog, and a chocolate cake shake. Sometimes the heart knows exactly what it wants.",
-    publishedAt: "2026-09-04T14:00:00-04:00",
-  },
-  {
     title: "Sean Likes Wingies",
     category: "Wings",
     verdict: "Smoke First. Fry Second.",
