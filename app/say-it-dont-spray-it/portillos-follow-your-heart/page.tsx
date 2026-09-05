@@ -26,7 +26,7 @@ export default function Page() {
         <div className="articleHead">
           <p className="eyebrow">SAY IT, DON’T SPRAY IT · ONE MAN’S OPINION</p>
           <h1>I Don’t Care That It’s a Chain. Sometimes You Have to Follow Your Heart</h1>
-          <p className="opinionDeck">A chain can still earn the craving.</p>
+          <p className="opinionDeck">Being part of a chain is information—not a verdict. Good food still gets to be good.</p>
           <div className="opinionByline"><img src="/sean-profile-blue.png" alt="Sean Matthews" /><div><span>OPINION BY</span><strong>Sean Matthews</strong></div></div>
         </div>
         <img className="articleImage" src="/portillos-italian-beef.jpg" alt="Portillo’s Italian beef sandwich ordered wet with peppers" />
