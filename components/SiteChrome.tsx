@@ -4,6 +4,7 @@ export function SiteHeader(){
   return <header>
     <Link className="logo" href="/">Bestaurants<span>Indy</span></Link>
     <nav><a href="/reviews">Reviews</a><a href="/photo-buffet">Photo Buffet</a><a href="/field-notes">Field Notes</a><a href="/guides">Guides</a><a href="/neighborhoods">Neighborhoods</a><a href="/out-of-sight-not-out-of-mind">Out of Sight, Not Out of Mind</a><a href="/say-it-dont-spray-it">Say It, Don&apos;t Spray It</a><a href="/about">About Sean</a></nav>
+    <details className="mobileMenu"><summary><span aria-hidden="true">☰</span> Menu</summary><div className="mobileMenuPanel"><a href="/reviews">Reviews</a><a href="/photo-buffet">Photo Buffet</a><a href="/field-notes">Field Notes</a><a href="/guides">Guides</a><a href="/neighborhoods">Neighborhoods</a><a href="/out-of-sight-not-out-of-mind">Out of Sight, Not Out of Mind</a><a href="/say-it-dont-spray-it">Say It, Don&apos;t Spray It</a><a href="/about">About Sean</a></div></details>
     <a className="ig" href="https://www.instagram.com/bestaurantsindy/" target="_blank" rel="noreferrer">@bestaurantsindy</a>
   </header>
 }
