@@ -1,6 +1,7 @@
 import {FieldNote} from "../../../components/FieldNote";
 
 export const metadata = {
+  alternates: { canonical: "/reviews/yats-half-and-half" },
   title: "Half and Half Is the Whole Point | BestaurantsIndy",
   description: "At Yats, red beans and rice beside crawfish étouffée turns one inexpensive plate into the right introduction.",
   openGraph: {

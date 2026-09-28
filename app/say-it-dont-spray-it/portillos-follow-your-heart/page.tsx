@@ -1,6 +1,7 @@
 import {SiteFooter,SiteHeader} from "../../../components/SiteChrome";
 
 export const metadata = {
+  alternates: { canonical: "/say-it-dont-spray-it/portillos-follow-your-heart" },
   title: "I Don’t Care That It’s a Chain. Sometimes You Have to Follow Your Heart | BestaurantsIndy",
   description: "Portillo’s Italian beef, Chicago-style hot dog, and chocolate cake shake prove that a chain can still be worth craving.",
   openGraph: {

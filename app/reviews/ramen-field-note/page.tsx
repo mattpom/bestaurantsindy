@@ -1,6 +1,7 @@
 import {FieldNote} from "../../../components/FieldNote";
 
 export const metadata = {
+  alternates: { canonical: "/reviews/ramen-field-note" },
   title: "Hooray for Ray | BestaurantsIndy",
   description: "Ramen Ray's Spicy Miso brings pork broth, miso, chili heat, chashu, egg, noodles, and vegetables together in one substantial bowl.",
 };

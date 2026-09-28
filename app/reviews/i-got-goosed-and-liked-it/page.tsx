@@ -1,6 +1,7 @@
 import {FieldNote} from "../../../components/FieldNote";
 
 export const metadata = {
+  alternates: { canonical: "/reviews/i-got-goosed-and-liked-it" },
   title: "I Got Goosed and Liked It | BestaurantsIndy",
   description: "The Goose at Goose the Market proves that prosciutto, fresh mozzarella, basil, black pepper, olive oil, and good bread are enough.",
   openGraph: {

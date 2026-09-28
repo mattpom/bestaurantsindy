@@ -1,6 +1,7 @@
 import {FieldNote} from "../../../components/FieldNote";
 
 export const metadata={
+  alternates: { canonical: "/reviews/pork-chop-field-note" },
   title:"Hall of Sean: Spoke & Steele’s Pork Chop | BestaurantsIndy",
   description:"A retired Spoke & Steele pork chop earns a place in Sean’s personal hall of fame—and represents the quality still worth visiting for.",
 };

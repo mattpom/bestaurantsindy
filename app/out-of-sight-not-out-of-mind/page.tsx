@@ -1,5 +1,5 @@
 import { SiteHeader, SiteFooter } from "../../components/SiteChrome";
-export const metadata={title:"Out of Sight, Not Out of Mind | BestaurantsIndy",description:"Memorable food beyond Indianapolis: dishes and destinations worth thinking about long after the trip home."};
+export const metadata={title:"Out of Sight, Not Out of Mind | BestaurantsIndy",description:"Memorable food beyond Indianapolis: dishes and destinations worth thinking about long after the trip home.",alternates:{canonical:"/out-of-sight-not-out-of-mind"}};
 const stories=[
 {title:"The Best Nashville Hot Chicken Is from Nashville",place:"PRINCE’S HOT CHICKEN · NASHVILLE",image:"/princes-hot-chicken.jpeg",href:"/out-of-sight-not-out-of-mind/princes-hot-chicken",summary:"Prince’s did not chase the hot-chicken trend. It started it—and the original still explains why the dish became a Nashville landmark."}
 ];

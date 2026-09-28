@@ -1,6 +1,7 @@
 import {SiteFooter,SiteHeader} from "../../components/SiteChrome";
 
 export const metadata = {
+  alternates: { canonical: "/photo-buffet" },
   title: "Photo Buffet | Real Indianapolis Food Photos | BestaurantsIndy",
   description: "A visual menu of real dishes from Indianapolis-area restaurants—photographed as they arrived, with no studio staging or AI polish.",
   openGraph: {

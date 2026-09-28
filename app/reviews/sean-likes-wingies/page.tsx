@@ -1,6 +1,7 @@
 import {FieldNote} from "../../../components/FieldNote";
 
 export const metadata = {
+  alternates: { canonical: "/reviews/sean-likes-wingies" },
   title: "Sean Likes Wingies | BestaurantsIndy",
   description:
     "Fat Dan’s hickory-smoked, flash-fried wings, hand-cut fries, and why its SoBro pub is one of Indianapolis’ best places to watch the Cubs.",

@@ -1,6 +1,7 @@
 import { SiteHeader, SiteFooter } from "../../../components/SiteChrome";
 
 export const metadata = {
+  alternates: { canonical: "/say-it-dont-spray-it/indianapolis-seafood-problem" },
   title: "Indianapolis Has a Seafood Problem | BestaurantsIndy",
   description:
     "Indianapolis has seafood, but it lacks a dependable casual alternative to Red Lobster. Sean Matthews explains the missing middle.",

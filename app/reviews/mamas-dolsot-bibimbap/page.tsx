@@ -1,6 +1,7 @@
 import {FieldNote} from "../../../components/FieldNote";
 
 export const metadata = {
+  alternates: { canonical: "/reviews/mamas-dolsot-bibimbap" },
   title: "The Best Part Is at the Bottom | BestaurantsIndy",
   description: "Mama’s Korean Restaurant serves dolsot bibimbap in a sizzling stone pot. Sean’s advice: let it sit before mixing so the rice at the bottom becomes deeply crisp.",
 };

@@ -1,6 +1,7 @@
 import {SiteFooter,SiteHeader} from "../../../components/SiteChrome";
 
 export const metadata={
+  alternates: { canonical: "/reviews/wingman" },
   title:"No, You Can Be My Wingman | BestaurantsIndy",
   description:"Korean fried chicken, Buffalo wings, and why bb.q Chicken in Castleton now holds Sean's top spot.",
   openGraph:{

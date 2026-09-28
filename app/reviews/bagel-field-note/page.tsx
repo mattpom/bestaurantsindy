@@ -1,6 +1,7 @@
 import {FieldNote} from "../../../components/FieldNote";
 
 export const metadata = {
+  alternates: { canonical: "/reviews/bagel-field-note" },
   title: "The Day Lox Took a Back Seat | BestaurantsIndy",
   description: "Broad Ripple Bagel & Deli's Tonya Harding makes the case for a hot, stacked lunch sandwich on a steamed bagel.",
 };

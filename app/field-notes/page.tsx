@@ -1,5 +1,5 @@
 import { SiteHeader, SiteFooter } from "../../components/SiteChrome";
-export const metadata={title:"Field Notes | BestaurantsIndy",description:"Consider it the small plates of Indianapolis-area food: quick finds, local oddities, old favorites, and other bites worth remembering."};
+export const metadata={title:"Field Notes | BestaurantsIndy",description:"Consider it the small plates of Indianapolis-area food: quick finds, local oddities, old favorites, and other bites worth remembering.",alternates:{canonical:"/field-notes"}};
 const notes=[
 {title:"The Nostalgic Crunch Coat Cone",place:"JIMMIES DAIRY BAR · PENDLETON",image:"/jimmies-crunch-coat.jpg",href:"/field-notes/crunch-coat-cone",summary:"Vanilla soft serve buried under sweet golden crunch and rainbow sprinkles—the kind of cone that tastes like an Indiana summer."}
 ];
