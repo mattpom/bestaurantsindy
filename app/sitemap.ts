@@ -1,4 +1,6 @@
 import type { MetadataRoute } from "next";
+import { diningGuides } from "./guides/data";
+import { neighborhoods } from "./neighborhoods/data";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const base = "https://bestaurantsindy.com";
@@ -9,6 +11,16 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${base}/field-notes`, changeFrequency: "monthly", priority: 0.8 },
     { url: `${base}/guides`, changeFrequency: "monthly", priority: 0.8 },
     { url: `${base}/neighborhoods`, changeFrequency: "monthly", priority: 0.8 },
+    ...diningGuides.map(({ id }) => ({
+      url: `${base}/guides/${id}`,
+      changeFrequency: "monthly" as const,
+      priority: 0.8,
+    })),
+    ...neighborhoods.map(({ id }) => ({
+      url: `${base}/neighborhoods/${id}`,
+      changeFrequency: "monthly" as const,
+      priority: 0.8,
+    })),
     { url: `${base}/about`, changeFrequency: "monthly", priority: 0.8 },
     { url: `${base}/editorial-policy`, changeFrequency: "monthly", priority: 0.8 },
     { url: `${base}/privacy`, changeFrequency: "yearly", priority: 0.3 },
