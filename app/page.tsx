@@ -95,6 +95,11 @@ export default function Home() {
       </div>
     </section>
 
+    <section className="section" aria-labelledby="partnership-title">
+      <div className="heading"><div><p className="eyebrow">LOCAL PARTNERSHIPS</p><h2 id="partnership-title">Work with BestaurantsIndy.</h2></div><p>Discuss a clearly labeled sponsorship or newsletter placement. Editorial reviews stay independent, with placement and pricing agreed before publication.</p></div>
+      <a className="button red" href="https://www.instagram.com/bestaurantsindy/" target="_blank" rel="noopener noreferrer" data-revenue-link="sponsorship_inquiry">Discuss a sponsorship on Instagram</a>
+    </section>
+
     <EmailSignup/>
 
     <footer><Link className="logo" href="/">Bestaurants<span>Indy</span></Link><p>Indianapolis restaurants worth leaving the house for.</p><div><a href="/reviews">Reviews</a><a href="/photo-buffet">Photo Buffet</a><a href="/field-notes">Field Notes</a><a href="/say-it-dont-spray-it">Say It, Don&apos;t Spray It</a><a href="/guides">Guides</a><a href="/about">About</a><a href="/editorial-policy">Editorial policy</a></div><small>© 2026 BestaurantsIndy. Opinions are Sean&apos;s. Sponsored or hosted meals will be labeled plainly.</small></footer>
