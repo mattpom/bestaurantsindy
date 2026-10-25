@@ -13,6 +13,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${base}/neighborhoods`, changeFrequency: "monthly", priority: 0.8 },
     ...diningGuides.map(({ id }) => ({
       url: `${base}/guides/${id}`,
+      ...(id === "lunch-under-20" ? {lastModified: "2026-10-25"} : {}),
       changeFrequency: "monthly" as const,
       priority: 0.8,
     })),
