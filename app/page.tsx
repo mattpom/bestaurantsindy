@@ -100,6 +100,18 @@ export default function Home() {
       <a className="button red" href="https://www.instagram.com/bestaurantsindy/" target="_blank" rel="noopener noreferrer" data-revenue-link="sponsorship_inquiry">Discuss a sponsorship on Instagram</a>
     </section>
 
+
+    <section className="section" aria-labelledby="food-reading-title">
+      <div className="heading"><div><p className="eyebrow">KEEP FOLLOWING YOUR APPETITE</p><h2 id="food-reading-title">Choose dinner. Then explore the food.</h2></div><p>Find a local table, read the story behind a dish, or browse kitchen tools on our sister food site.</p></div>
+      <div className="guideList">
+        <a href="/guides/date-night"><div><strong>Plan an Indianapolis date night</strong><p>Start with the occasion.</p></div><b>↗</b></a>
+        <a href="/guides/lunch-under-20"><div><strong>Find lunch under $20</strong><p>Browse the budget-minded guide.</p></div><b>↗</b></a>
+        <a href="https://dontbehangry.com/tell-me-about-porterhouse-steak.html"><div><strong>Understand the porterhouse</strong><p>Explore the cut before your next steak dinner.</p></div><b>↗</b></a>
+        <a href="https://dontbehangry.com/shop.html" data-revenue-link="sister_site_shop"><div><strong>Browse kitchen tools and cookbooks</strong><p>Product selections at Don&apos;t Be Hangry.</p></div><b>↗</b></a>
+      </div>
+      <p className="note">Don&apos;t Be Hangry is part of our publishing portfolio. Its shopping pages contain disclosed affiliate links, which may earn us a commission.</p>
+    </section>
+
     <EmailSignup/>
 
     <footer><Link className="logo" href="/">Bestaurants<span>Indy</span></Link><p>Indianapolis restaurants worth leaving the house for.</p><div><a href="/reviews">Reviews</a><a href="/photo-buffet">Photo Buffet</a><a href="/field-notes">Field Notes</a><a href="/say-it-dont-spray-it">Say It, Don&apos;t Spray It</a><a href="/guides">Guides</a><a href="/about">About</a><a href="/editorial-policy">Editorial policy</a></div><small>© 2026 BestaurantsIndy. Opinions are Sean&apos;s. Sponsored or hosted meals will be labeled plainly.</small></footer>
