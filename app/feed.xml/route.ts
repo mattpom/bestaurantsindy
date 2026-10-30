@@ -14,6 +14,14 @@ type FeedEntry = {
 
 const sectionEntries: FeedEntry[] = [
   {
+    title: "Best Places for Thanksgiving Dinner in Indianapolis, 2026",
+    category: "Restaurant Guides",
+    image: "/og.png",
+    href: "/guides/thanksgiving-dinner-indianapolis-2026",
+    summary: "Skip the cooking: compare Yelp ratings, diner reviews and published 2026 holiday menus, with prices and reservation links.",
+    publishedAt: "2026-10-30T16:00:00-04:00",
+  },
+  {
     title: "The Best Nashville Hot Chicken Is from Nashville",
     category: "Out of Sight, Not Out of Mind",
     image: "/princes-hot-chicken.jpeg",

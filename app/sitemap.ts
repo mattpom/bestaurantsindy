@@ -10,6 +10,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${base}/photo-buffet`, lastModified: "2026-09-04", changeFrequency: "monthly", priority: 0.8 },
     { url: `${base}/field-notes`, changeFrequency: "monthly", priority: 0.8 },
     { url: `${base}/guides`, changeFrequency: "monthly", priority: 0.8 },
+    { url: `${base}/guides/thanksgiving-dinner-indianapolis-2026`, lastModified: "2026-10-30", changeFrequency: "weekly", priority: 0.9 },
     { url: `${base}/neighborhoods`, changeFrequency: "monthly", priority: 0.8 },
     ...diningGuides.map(({ id }) => ({
       url: `${base}/guides/${id}`,

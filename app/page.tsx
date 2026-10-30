@@ -7,6 +7,7 @@ const cards = [
   ["Wings","No, You Can Be My Wingman","Korean fried chicken, Buffalo wings, and why soy garlic now holds Sean’s top spot.","NEW #1","wing","/reviews/wingman"],
 ];
 const guides = [
+  ["THANKSGIVING DINNER 2026","Skip the cooking: review-backed picks, published holiday menus and reservation links.","/guides/thanksgiving-dinner-indianapolis-2026"],
   ["TAKE THE VISITORS","Where to take out-of-town guests without embarrassing Indianapolis.","/guides/take-the-visitors"],
   ["DATE NIGHT","Enough atmosphere—and food good enough to justify it.","/guides/date-night"],
   ["LUNCH UNDER $20","A proper meal without a financial planning session.","/guides/lunch-under-20"],
@@ -37,6 +38,8 @@ export default function Home() {
     </section>
 
     <div className="ticker"><span>WHAT TO ORDER</span><b>•</b><span>WHAT TO SKIP</span><b>•</b><span>WHAT IT COSTS</span><b>•</b><span>WORTH THE DRIVE?</span></div>
+
+    <section className="thanksgivingHome" aria-labelledby="thanksgiving-home-title"><div><p className="eyebrow">NOVEMBER 26 · THE HOLIDAY TABLE</p><h2 id="thanksgiving-home-title">Thanksgiving dinner. Somebody else’s kitchen.</h2><p>Compare Indianapolis restaurants using Yelp, diner reviews and published 2026 menus. Know the price—and what still needs checking—before you reserve.</p></div><Link className="button red" href="/guides/thanksgiving-dinner-indianapolis-2026">Read the guide →</Link></section>
 
     <section className="section" id="latest">
       <div className="heading"><div><p className="eyebrow">LATEST INTELLIGENCE</p><h2>Eat better this week.</h2></div><p>Three opinions. Zero committee meetings.</p></div>
