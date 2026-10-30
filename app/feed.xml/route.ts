@@ -14,6 +14,14 @@ type FeedEntry = {
 
 const sectionEntries: FeedEntry[] = [
   {
+    title: "The Doorbell Dodge: Where to Escape Trick-or-Treaters in Indianapolis",
+    category: "Restaurant Guides",
+    image: "/og.png",
+    href: "/guides/escape-trick-or-treaters-indianapolis",
+    summary: "An evening-out escape plan: five Indianapolis dinner, jazz and cinema ideas for missing the Halloween doorbell rush.",
+    publishedAt: "2026-10-30T17:00:00-04:00",
+  },
+  {
     title: "Best Places for Thanksgiving Dinner in Indianapolis, 2026",
     category: "Restaurant Guides",
     image: "/og.png",
